@@ -22,9 +22,10 @@
    "reqd": 1
   },
   {
+   "default": "27",
    "fieldname": "temperature",
    "fieldtype": "Float",
-   "label": "Temperature"
+   "label": "Temperature (degC)"
   },
   {
    "fieldname": "description",
@@ -34,7 +35,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:14.021873",
+ "modified": "2023-02-27 02:08:30.179908",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Storage",

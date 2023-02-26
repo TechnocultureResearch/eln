@@ -1,12 +1,12 @@
 {
  "charts": [],
- "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Inventory, Shopping Cart, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"9ssp9VfJxj\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Experiment Raw Data\",\"col\":4}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"H4HxyeJCL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Life Inventory\",\"col\":4}}]",
+ "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Inventory, Shopping Cart, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"9ssp9VfJxj\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"M283ifvFKN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>LIMS</b></span>\",\"col\":12}},{\"id\":\"_R5S0HajzW\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mange storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Inventory\",\"col\":4}},{\"id\":\"H4HxyeJCL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Inventory\",\"col\":4}}]",
  "creation": "2023-02-25 23:37:01.960862",
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "buying",
+ "icon": "agriculture",
  "idx": 0,
  "is_hidden": 0,
  "label": "ELN",
@@ -62,103 +62,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Experiment Raw Data",
-   "link_count": 3,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Electrophoresis Run",
-   "link_count": 0,
-   "link_to": "Electrophoresis Run",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "DNA Purity",
-   "link_count": 0,
-   "link_to": "DNA Purity",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Microscopy Image",
-   "link_count": 0,
-   "link_to": "Microscopy Image",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Life Inventory",
-   "link_count": 5,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Cell Line",
-   "link_count": 0,
-   "link_to": "Cell Line",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Bacteria",
-   "link_count": 0,
-   "link_to": "Bacteria",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Rodent Strain",
-   "link_count": 0,
-   "link_to": "Rodent Strain",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Rodent Specimen",
-   "link_count": 0,
-   "link_to": "Rodent Specimen",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Rodent Cage",
-   "link_count": 0,
-   "link_to": "Rodent Cage",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Inventory",
+   "label": "Chemical Inventory",
    "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
@@ -216,17 +120,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Knowledge",
-   "link_count": 4,
+   "label": "Biological Inventory",
+   "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Document",
+   "label": "Cell Line",
    "link_count": 0,
-   "link_to": "Document",
+   "link_to": "Cell Line",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -234,9 +138,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Report Document",
+   "label": "Bacteria",
    "link_count": 0,
-   "link_to": "Report Document",
+   "link_to": "Bacteria",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -244,9 +148,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "External Report",
+   "label": "Rodent Strain",
    "link_count": 0,
-   "link_to": "External Report",
+   "link_to": "Rodent Strain",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -254,9 +158,57 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Paper",
+   "label": "Rodent Specimen",
    "link_count": 0,
-   "link_to": "Paper",
+   "link_to": "Rodent Specimen",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rodent Cage",
+   "link_count": 0,
+   "link_to": "Rodent Cage",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Raw Data",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electrophoresis Run",
+   "link_count": 0,
+   "link_to": "Electrophoresis Run",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DNA Purity",
+   "link_count": 0,
+   "link_to": "DNA Purity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Microscopy Image",
+   "link_count": 0,
+   "link_to": "Microscopy Image",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -265,7 +217,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Projects",
-   "link_count": 3,
+   "link_count": 4,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -275,6 +227,16 @@
    "label": "Project",
    "link_count": 0,
    "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Protocol",
+   "link_count": 0,
+   "link_to": "Protocol",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -292,15 +254,63 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Protocol",
+   "label": "ELN Settings",
    "link_count": 0,
-   "link_to": "Protocol",
+   "link_to": "ELN Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Knowledge",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Paper",
+   "link_count": 0,
+   "link_to": "Paper",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "External Report",
+   "link_count": 0,
+   "link_to": "External Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Report Document",
+   "link_count": 0,
+   "link_to": "Report Document",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Document",
+   "link_count": 0,
+   "link_to": "Document",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2023-02-27 00:21:09.778651",
+ "modified": "2023-02-27 02:07:09.459376",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN",
