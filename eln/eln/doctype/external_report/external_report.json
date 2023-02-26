@@ -12,7 +12,8 @@
   "title",
   "column_break_uvkn",
   "url",
-  "doc"
+  "doc",
+  "amended_from"
  ],
  "fields": [
   {
@@ -35,14 +36,24 @@
   {
    "fieldname": "column_break_uvkn",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "External Report",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-02-26 21:42:00.535617",
+ "modified": "2023-02-26 22:26:20.710673",
  "modified_by": "Administrator",
  "module": "ELN",
- "name": "External Document",
+ "name": "External Report",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

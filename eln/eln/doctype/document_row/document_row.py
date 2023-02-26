@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ExternalDocument(Document):
+class DocumentRow(Document):
 	pass

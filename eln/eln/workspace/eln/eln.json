@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Experiment Raw Data\",\"col\":4}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}}]",
+ "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Inventory, Shopping Cart, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Experiment Raw Data\",\"col\":4}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}}]",
  "creation": "2023-02-25 23:37:01.960862",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -11,24 +11,6 @@
  "is_hidden": 0,
  "label": "ELN",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Experiment Raw Data",
-   "link_count": 1,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Electrophoresis Run",
-   "link_count": 0,
-   "link_to": "Electrophoresis Run",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -188,10 +170,78 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Knowledge",
-   "link_count": 7,
+   "label": "Experiment Raw Data",
+   "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electrophoresis Run",
+   "link_count": 0,
+   "link_to": "Electrophoresis Run",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DNA Purity",
+   "link_count": 0,
+   "link_to": "DNA Purity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Microscopy Image",
+   "link_count": 0,
+   "link_to": "Microscopy Image",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Knowledge",
+   "link_count": 8,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Experiment",
+   "link_count": 0,
+   "link_to": "Experiment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Protocol",
+   "link_count": 0,
+   "link_to": "Protocol",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "hidden": 0,
@@ -218,7 +268,7 @@
    "is_query_report": 0,
    "label": "External Document",
    "link_count": 0,
-   "link_to": "External Document",
+   "link_to": "External Report",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -242,29 +292,9 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Experiment",
-   "link_count": 0,
-   "link_to": "Experiment",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Protocol",
-   "link_count": 0,
-   "link_to": "Protocol",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2023-02-26 21:38:58.573799",
+ "modified": "2023-02-26 23:35:15.784463",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN",
@@ -272,7 +302,20 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Principal Investigator"
+  },
+  {
+   "role": "Research Associate"
+  },
+  {
+   "role": "Scientist"
+  },
+  {
+   "role": "Technician"
+  }
+ ],
  "sequence_id": 1.0,
  "shortcuts": [],
  "title": "ELN"

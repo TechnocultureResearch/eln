@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PROJ-{####}",
+ "creation": "2023-02-26 23:33:42.868488",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "lft",
+  "rgt",
+  "is_group",
+  "column_break_epnc",
+  "old_parent",
+  "parent_project",
+  "section_break_cjsh",
+  "description",
+  "experiments",
+  "papers",
+  "docs"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Project"
+  },
+  {
+   "fieldname": "parent_project",
+   "fieldtype": "Link",
+   "label": "Parent Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "Experiments",
+   "options": "Experiment Row"
+  },
+  {
+   "fieldname": "papers",
+   "fieldtype": "Table",
+   "label": "Key Papers",
+   "options": "Paper Row"
+  },
+  {
+   "fieldname": "docs",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Document Row"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_epnc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cjsh",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-02-27 00:00:43.529396",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Project",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

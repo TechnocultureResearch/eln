@@ -93,7 +93,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 16:50:53.059711",
+ "modified": "2023-02-26 22:20:32.815561",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Consumable",
@@ -115,5 +115,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

@@ -16,7 +16,12 @@
   "procedure",
   "section_break_kwmr",
   "references",
-  "amended_from"
+  "authors",
+  "amended_from",
+  "section_break_xno3",
+  "sign_pi",
+  "column_break_imi0",
+  "sign_auth"
  ],
  "fields": [
   {
@@ -67,12 +72,36 @@
    "options": "Protocol",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "sign_pi",
+   "fieldtype": "Signature",
+   "label": "PI Signature"
+  },
+  {
+   "fieldname": "sign_auth",
+   "fieldtype": "Signature",
+   "label": "Author Signature"
+  },
+  {
+   "fieldname": "section_break_xno3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_imi0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table",
+   "label": "Authors",
+   "options": "Author Row"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-26 22:09:46.485620",
+ "modified": "2023-02-27 00:08:08.460800",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Protocol",
@@ -141,5 +170,7 @@
  "sort_order": "DESC",
  "states": [],
  "title_field": "title",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

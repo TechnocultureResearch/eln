@@ -1,0 +1,20 @@
+{
+ "action": "Update Settings",
+ "creation": "2023-02-26 20:25:52.090251",
+ "description": "Start by setting up your Lab settings.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 1,
+ "is_skipped": 0,
+ "modified": "2023-02-26 23:25:00.746177",
+ "modified_by": "Administrator",
+ "name": "Set up ELN settings",
+ "owner": "Administrator",
+ "reference_document": "ELN Settings",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Setup your Lab settings",
+ "validate_action": 0
+}

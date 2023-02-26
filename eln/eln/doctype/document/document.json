@@ -34,7 +34,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 21:14:08.565523",
+ "modified": "2023-02-26 22:19:28.567273",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Document",
@@ -58,5 +58,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "title"
+ "title_field": "title",
+ "track_changes": 1
 }

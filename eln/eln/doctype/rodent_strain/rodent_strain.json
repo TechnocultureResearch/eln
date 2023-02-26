@@ -72,7 +72,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 16:54:44.152650",
+ "modified": "2023-02-26 22:20:37.452264",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Rodent Strain",
@@ -94,5 +94,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

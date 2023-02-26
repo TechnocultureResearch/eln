@@ -90,7 +90,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 19:52:06.722146",
+ "modified": "2023-02-26 22:20:00.321357",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Equipment",
@@ -111,5 +111,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

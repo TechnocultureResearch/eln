@@ -18,7 +18,13 @@
   "procedure",
   "results",
   "conclusion",
-  "amended_from"
+  "amended_from",
+  "section_break_fjtr",
+  "sign_pi",
+  "column_break_xep7",
+  "sign_exp",
+  "column_break_zsvg",
+  "sign_witness"
  ],
  "fields": [
   {
@@ -83,12 +89,39 @@
    "label": "Witness",
    "options": "User",
    "reqd": 1
+  },
+  {
+   "fieldname": "sign_pi",
+   "fieldtype": "Signature",
+   "label": "PI Signature"
+  },
+  {
+   "fieldname": "sign_exp",
+   "fieldtype": "Signature",
+   "label": "Experimenter Signature"
+  },
+  {
+   "fieldname": "sign_witness",
+   "fieldtype": "Signature",
+   "label": "Witness Signature"
+  },
+  {
+   "fieldname": "column_break_xep7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zsvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fjtr",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-26 22:05:15.453649",
+ "modified": "2023-02-27 00:05:21.081567",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Experiment",
@@ -157,7 +190,22 @@
  "search_fields": "title",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Drafting"
+  },
+  {
+   "color": "Green",
+   "title": "Submitted"
+  },
+  {
+   "color": "Blue",
+   "title": "Result Approved"
+  }
+ ],
  "title_field": "title",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

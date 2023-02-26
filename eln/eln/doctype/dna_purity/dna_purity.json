@@ -1,42 +1,33 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-02-26 17:14:00.041326",
+ "creation": "2023-02-26 22:19:02.280245",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "cage_name",
-  "breeding",
-  "description"
+  "reading_260",
+  "reading_280"
  ],
  "fields": [
   {
-   "fieldname": "cage_name",
+   "fieldname": "reading_260",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
+   "label": "OD (260nm)"
   },
   {
-   "default": "0",
-   "fieldname": "breeding",
-   "fieldtype": "Check",
-   "label": "Breeding"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Long Text",
-   "label": "Description"
+   "fieldname": "reading_280",
+   "fieldtype": "Data",
+   "label": "OD (280nm)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:26.926977",
+ "modified": "2023-02-26 22:19:02.280245",
  "modified_by": "Administrator",
  "module": "ELN",
- "name": "Rodent Cage",
+ "name": "DNA Purity",
  "owner": "Administrator",
  "permissions": [
   {
@@ -52,6 +43,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

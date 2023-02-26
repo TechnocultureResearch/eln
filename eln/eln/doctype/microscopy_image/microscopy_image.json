@@ -1,42 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-02-26 17:14:00.041326",
+ "autoname": "format:MICROIMG-{DD}{MM}{YY}-{###}",
+ "creation": "2023-02-26 22:24:07.833449",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "cage_name",
-  "breeding",
+  "image",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "cage_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
    "reqd": 1
   },
   {
-   "default": "0",
-   "fieldname": "breeding",
-   "fieldtype": "Check",
-   "label": "Breeding"
-  },
-  {
    "fieldname": "description",
-   "fieldtype": "Long Text",
+   "fieldtype": "Small Text",
    "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:26.926977",
+ "modified": "2023-02-26 22:24:07.833449",
  "modified_by": "Administrator",
  "module": "ELN",
- "name": "Rodent Cage",
+ "name": "Microscopy Image",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -52,6 +46,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

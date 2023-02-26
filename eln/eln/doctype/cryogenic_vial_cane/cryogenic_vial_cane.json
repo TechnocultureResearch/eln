@@ -8,11 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "vial_name",
-  "section_break_f9bi",
-  "qty",
-  "type",
-  "column_break_6h4q",
   "rows",
+  "column_break_6h4q",
+  "type",
   "color",
   "section_break_fmck",
   "description",
@@ -24,17 +22,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "section_break_f9bi",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "qty",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Number of Boxes",
    "reqd": 1
   },
   {
@@ -76,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 19:44:09.354312",
+ "modified": "2023-02-26 23:31:06.135330",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Cryogenic Vial Cane",
@@ -97,5 +84,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

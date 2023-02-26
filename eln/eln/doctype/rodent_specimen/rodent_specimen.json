@@ -139,7 +139,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 17:17:41.570859",
+ "modified": "2023-02-26 22:20:53.769169",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Rodent Specimen",
@@ -161,5 +161,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

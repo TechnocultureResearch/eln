@@ -64,7 +64,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-26 22:15:23.175902",
+ "modified": "2023-02-26 22:27:49.094701",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Report Document",
@@ -134,5 +134,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

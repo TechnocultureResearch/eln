@@ -1,0 +1,20 @@
+{
+ "action": "Create Entry",
+ "creation": "2023-02-26 22:51:59.544367",
+ "description": "Experiments allow users to document a run of a Protocol. Experiments require a predefined protocol and a witness user.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2023-02-26 23:27:00.588161",
+ "modified_by": "Administrator",
+ "name": "Try documenting an experiment",
+ "owner": "Administrator",
+ "reference_document": "Experiment",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Try documenting an experiment",
+ "validate_action": 1
+}

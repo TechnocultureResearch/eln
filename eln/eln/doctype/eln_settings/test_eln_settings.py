@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestExternalDocument(FrappeTestCase):
+class TestELNSettings(FrappeTestCase):
 	pass

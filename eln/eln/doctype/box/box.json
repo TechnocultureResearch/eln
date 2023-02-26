@@ -11,7 +11,6 @@
   "box_name",
   "type",
   "column_break_cgcu",
-  "qty",
   "color",
   "section_break_pyna",
   "description"
@@ -22,13 +21,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "qty",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Number of Boxes",
    "reqd": 1
   },
   {
@@ -58,7 +50,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 20:36:49.145186",
+ "modified": "2023-02-26 23:29:01.921226",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Box",
@@ -80,5 +72,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
