@@ -9,10 +9,9 @@
  "engine": "InnoDB",
  "field_order": [
   "box_name",
-  "section_break_0xwl",
-  "qty",
-  "column_break_cgcu",
   "type",
+  "column_break_cgcu",
+  "qty",
   "color",
   "section_break_pyna",
   "description"
@@ -45,12 +44,8 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Description"
-  },
-  {
-   "fieldname": "section_break_0xwl",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "column_break_cgcu",
@@ -63,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 19:17:23.153089",
+ "modified": "2023-02-26 20:36:49.145186",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Box",
