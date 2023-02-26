@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Inventory, Shopping Cart, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"9ssp9VfJxj\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"M283ifvFKN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>LIMS</b></span>\",\"col\":12}},{\"id\":\"_R5S0HajzW\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mange storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Inventory\",\"col\":4}},{\"id\":\"H4HxyeJCL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Inventory\",\"col\":4}}]",
+ "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Inventory, Shopping Cart, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"KFKaH1tFSd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Projects\",\"col\":4}},{\"id\":\"1BUN9WKACs\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Protocols\",\"col\":4}},{\"id\":\"ooKgOt3Z-i\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Papers\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"0lEONrbvhh\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Experiments\",\"col\":4}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Documents\",\"col\":4}},{\"id\":\"M283ifvFKN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>LIMS</b></span>\",\"col\":12}},{\"id\":\"_R5S0HajzW\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mange storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Inventory\",\"col\":4}},{\"id\":\"H4HxyeJCL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Inventory\",\"col\":4}}]",
  "creation": "2023-02-25 23:37:01.960862",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -216,65 +216,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Projects",
-   "link_count": 4,
+   "label": "Other Documents",
+   "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Project",
+   "label": "Report Document",
    "link_count": 0,
-   "link_to": "Project",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Protocol",
-   "link_count": 0,
-   "link_to": "Protocol",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Experiment",
-   "link_count": 0,
-   "link_to": "Experiment",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "ELN Settings",
-   "link_count": 0,
-   "link_to": "ELN Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Knowledge",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Paper",
-   "link_count": 0,
-   "link_to": "Paper",
+   "link_to": "Report Document",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -292,16 +244,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Report Document",
-   "link_count": 0,
-   "link_to": "Report Document",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Document",
    "link_count": 0,
    "link_to": "Document",
@@ -310,14 +252,31 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-27 02:07:09.459376",
+ "modified": "2023-02-27 02:45:26.952495",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN",
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Project",
+   "label": "Projects"
+  },
+  {
+   "document_type": "Paper",
+   "label": "Papers"
+  },
+  {
+   "document_type": "Protocol",
+   "label": "Protocols"
+  },
+  {
+   "document_type": "Experiment",
+   "label": "Experiments"
+  }
+ ],
  "roles": [
   {
    "role": "Principal Investigator"
