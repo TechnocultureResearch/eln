@@ -14,7 +14,7 @@
   "section_break_ljro",
   "description",
   "procedure",
-  "section_break_kwmr",
+  "credentials_tab",
   "references",
   "authors",
   "amended_from",
@@ -57,10 +57,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_kwmr",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "section_break_ljro",
    "fieldtype": "Section Break"
   },
@@ -96,12 +92,17 @@
    "fieldtype": "Table",
    "label": "Authors",
    "options": "Author Row"
+  },
+  {
+   "fieldname": "credentials_tab",
+   "fieldtype": "Tab Break",
+   "label": "Credentials"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-27 00:08:08.460800",
+ "modified": "2023-02-27 03:02:26.598336",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Protocol",

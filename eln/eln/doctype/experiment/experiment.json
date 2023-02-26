@@ -16,10 +16,14 @@
   "section_break_f6mt",
   "description",
   "procedure",
+  "raw_data_tab",
+  "raw_data",
+  "conclusion_tab",
   "results",
   "conclusion",
+  "credentials_tab",
   "amended_from",
-  "section_break_fjtr",
+  "section_break_cbzf",
   "sign_pi",
   "column_break_xep7",
   "sign_exp",
@@ -114,14 +118,35 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_fjtr",
+   "fieldname": "conclusion_tab",
+   "fieldtype": "Tab Break",
+   "label": "Conclusion"
+  },
+  {
+   "fieldname": "credentials_tab",
+   "fieldtype": "Tab Break",
+   "label": "Credentials"
+  },
+  {
+   "fieldname": "section_break_cbzf",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "raw_data_tab",
+   "fieldtype": "Tab Break",
+   "label": "Raw Data"
+  },
+  {
+   "fieldname": "raw_data",
+   "fieldtype": "Table",
+   "label": "Raw Data Table",
+   "options": "Raw Data Row"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-27 00:05:21.081567",
+ "modified": "2023-02-27 03:17:28.992394",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Experiment",

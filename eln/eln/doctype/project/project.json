@@ -9,14 +9,15 @@
  "engine": "InnoDB",
  "field_order": [
   "project_name",
-  "lft",
-  "rgt",
+  "parent_project",
   "is_group",
   "column_break_epnc",
+  "lft",
+  "rgt",
   "old_parent",
-  "parent_project",
   "section_break_cjsh",
   "description",
+  "documents_tab",
   "experiments",
   "papers",
   "docs"
@@ -93,13 +94,18 @@
   {
    "fieldname": "section_break_cjsh",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-02-27 00:00:43.529396",
+ "modified": "2023-02-27 03:11:04.680453",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Project",

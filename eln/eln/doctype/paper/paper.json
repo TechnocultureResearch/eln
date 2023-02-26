@@ -18,9 +18,9 @@
   "pub_date",
   "volume",
   "journal",
-  "column_break_bosf",
+  "column_break_dleo",
   "abstract",
-  "section_break_ag7q",
+  "notes_tab",
   "notes"
  ],
  "fields": [
@@ -63,17 +63,9 @@
    "label": "PDF"
   },
   {
-   "fieldname": "column_break_bosf",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "abstract",
    "fieldtype": "Long Text",
    "label": "Abstract"
-  },
-  {
-   "fieldname": "section_break_ag7q",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "notes",
@@ -92,11 +84,20 @@
    "fieldname": "authors",
    "fieldtype": "Data",
    "label": "Authors"
+  },
+  {
+   "fieldname": "notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_dleo",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:10:59.647206",
+ "modified": "2023-02-27 03:07:15.937773",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Paper",
