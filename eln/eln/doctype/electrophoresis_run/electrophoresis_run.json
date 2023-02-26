@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{gel_type}-{DD}{MM}{YY}-{###}",
+ "creation": "2023-02-26 00:55:50.670275",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gel_type",
+  "gel_photo",
+  "column_break_i7r4",
+  "gel_ratio",
+  "witness",
+  "section_break_ulzw",
+  "lane_annotation"
+ ],
+ "fields": [
+  {
+   "fieldname": "gel_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gel Type",
+   "options": "Agrose\nPolyacrylamide",
+   "reqd": 1
+  },
+  {
+   "fieldname": "witness",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Witness"
+  },
+  {
+   "fieldname": "gel_photo",
+   "fieldtype": "Attach Image",
+   "label": "Gel Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lane_annotation",
+   "fieldtype": "Table",
+   "label": "Lane Annotation",
+   "options": "Lane Annotation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_i7r4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ulzw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gel_ratio",
+   "fieldtype": "Data",
+   "label": "Gel Ratio"
+  }
+ ],
+ "image_field": "gel_photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 01:25:02.553547",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Electrophoresis Run",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal Investigator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Scientist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Research Associate",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Technician",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

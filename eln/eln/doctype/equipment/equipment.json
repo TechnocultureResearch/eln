@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-26 19:42:38.087556",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_name",
+  "section_break_8nir",
+  "manufacturer",
+  "serial_number",
+  "equipment_type",
+  "column_break_vcve",
+  "barcode",
+  "model_number",
+  "purchase_date",
+  "warranty_expiration_date",
+  "section_break_uuvi",
+  "description",
+  "storage"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8nir",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "equipment_type",
+   "fieldtype": "Data",
+   "label": "Equipment Type"
+  },
+  {
+   "fieldname": "column_break_vcve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "model_number",
+   "fieldtype": "Data",
+   "label": "Model number"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase date"
+  },
+  {
+   "fieldname": "warranty_expiration_date",
+   "fieldtype": "Date",
+   "label": "Warranty expiration date"
+  },
+  {
+   "fieldname": "section_break_uuvi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "storage",
+   "fieldtype": "Link",
+   "label": "Storage Location",
+   "options": "Storage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 19:52:06.722146",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Equipment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

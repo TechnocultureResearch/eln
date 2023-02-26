@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{consumer_name}-{manufacturer}-{###}",
+ "creation": "2023-02-26 16:48:32.271333",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "consumable_name",
+  "section_break_fm7h",
+  "source",
+  "alt_name",
+  "manufacturer",
+  "catalog_number",
+  "column_break_oug7",
+  "type",
+  "mol_weight",
+  "cas_number",
+  "website",
+  "section_break_xiq0",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "consumable_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "alt_name",
+   "fieldtype": "Data",
+   "label": "Alternative Name"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manufacturer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "catalog_number",
+   "fieldtype": "Data",
+   "label": "Catalog Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "mol_weight",
+   "fieldtype": "Data",
+   "label": "Molecular Weight"
+  },
+  {
+   "fieldname": "cas_number",
+   "fieldtype": "Data",
+   "label": "Cas Number"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_fm7h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oug7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xiq0",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 16:50:53.059711",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Consumable",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

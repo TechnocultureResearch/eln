@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Experiment Raw Data\",\"col\":4}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge\",\"col\":4}}]",
  "creation": "2023-02-25 23:37:01.960862",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -10,8 +10,201 @@
  "idx": 0,
  "is_hidden": 0,
  "label": "ELN",
- "links": [],
- "modified": "2023-02-25 23:38:04.834322",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Experiment Raw Data",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electrophoresis Run",
+   "link_count": 0,
+   "link_to": "Electrophoresis Run",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Storage",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Storage",
+   "link_count": 0,
+   "link_to": "Storage",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Box",
+   "link_count": 0,
+   "link_to": "Box",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cryogenic Vial Cane",
+   "link_count": 0,
+   "link_to": "Cryogenic Vial Cane",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment",
+   "link_count": 0,
+   "link_to": "Equipment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Knowledge",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recipe",
+   "link_count": 0,
+   "link_to": "Recipe",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inventory",
+   "link_count": 10,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gene",
+   "link_count": 0,
+   "link_to": "Gene",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Primer",
+   "link_count": 0,
+   "link_to": "Primer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bacteria",
+   "link_count": 0,
+   "link_to": "Bacteria",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sequence",
+   "link_count": 0,
+   "link_to": "Sequence",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consumable",
+   "link_count": 0,
+   "link_to": "Consumable",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rodent Strain",
+   "link_count": 0,
+   "link_to": "Rodent Strain",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rodent Specimen",
+   "link_count": 0,
+   "link_to": "Rodent Specimen",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Antibody",
+   "link_count": 0,
+   "link_to": "Antibody",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rodent Cage",
+   "link_count": 0,
+   "link_to": "Rodent Cage",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cell Line",
+   "link_count": 0,
+   "link_to": "Cell Line",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-02-26 20:28:00.059317",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN",

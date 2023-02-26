@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{recipe_name}-{DD}{MM}{YY}-{###}",
+ "creation": "2023-02-26 20:19:59.576460",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "recipe_name",
+  "section_break_ttkt",
+  "source_name",
+  "source_url",
+  "storage_cond",
+  "section_break_4i1x",
+  "ph",
+  "conc",
+  "vol",
+  "section_break_mfrg",
+  "ingredients",
+  "prep"
+ ],
+ "fields": [
+  {
+   "fieldname": "ph",
+   "fieldtype": "Data",
+   "label": "pH"
+  },
+  {
+   "fieldname": "conc",
+   "fieldtype": "Data",
+   "label": "Concentration"
+  },
+  {
+   "fieldname": "vol",
+   "fieldtype": "Data",
+   "label": "Final Volume"
+  },
+  {
+   "fieldname": "storage_cond",
+   "fieldtype": "Data",
+   "label": "Storage Condition"
+  },
+  {
+   "fieldname": "section_break_4i1x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_name",
+   "fieldtype": "Data",
+   "label": "Source Name"
+  },
+  {
+   "fieldname": "source_url",
+   "fieldtype": "Data",
+   "label": "Source URL"
+  },
+  {
+   "fieldname": "section_break_mfrg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ingredients",
+   "fieldtype": "Table",
+   "label": "Ingredients",
+   "options": "Recipe Ingredient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prep",
+   "fieldtype": "Text Editor",
+   "label": "Preperation"
+  },
+  {
+   "fieldname": "recipe_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Recipe Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ttkt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 20:32:46.755028",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Recipe",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

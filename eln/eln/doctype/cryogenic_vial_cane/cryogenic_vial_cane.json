@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-26 19:27:02.839124",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vial_name",
+  "section_break_f9bi",
+  "qty",
+  "type",
+  "column_break_6h4q",
+  "rows",
+  "color",
+  "section_break_fmck",
+  "description",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "vial_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_f9bi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Boxes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Content Type",
+   "options": "General\nConsumable\nPlasmid\nPrimer\nGene\nAntibody\nSequence\nBacterium\nCellLine"
+  },
+  {
+   "fieldname": "column_break_6h4q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "9",
+   "fieldname": "rows",
+   "fieldtype": "Int",
+   "label": "Rows"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "section_break_fmck",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Storage Location",
+   "options": "Storage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 19:44:09.354312",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Cryogenic Vial Cane",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

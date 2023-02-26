@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{type}-{name}-{###}",
+ "creation": "2023-02-26 01:35:50.657177",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sequence_name",
+  "section_break_0c4u",
+  "type",
+  "sequence",
+  "accession",
+  "organism",
+  "column_break_wmk7",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "sequence_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "DNA\nCDNA\nRNA\nProbe (or synthetic)\nProtein (AA)"
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Sequence",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accession",
+   "fieldtype": "Data",
+   "label": "Accession"
+  },
+  {
+   "fieldname": "organism",
+   "fieldtype": "Data",
+   "label": "Organism"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_0c4u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wmk7",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 01:36:44.270845",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Sequence",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "sequence_name"
+}

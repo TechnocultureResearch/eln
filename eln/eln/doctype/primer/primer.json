@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-26 01:41:43.623859",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "primer_name",
+  "section_break_hxax",
+  "alt_name",
+  "tag",
+  "orientation",
+  "tm",
+  "bind_position",
+  "fragment_size",
+  "column_break_5rph",
+  "organism",
+  "application",
+  "restriction_site",
+  "source",
+  "manufacturer",
+  "catalog_num",
+  "units",
+  "web_page",
+  "column_break_0aet",
+  "description",
+  "sequence"
+ ],
+ "fields": [
+  {
+   "fieldname": "primer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alt_name",
+   "fieldtype": "Data",
+   "label": "Alternative name"
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Data",
+   "label": "Label / tag"
+  },
+  {
+   "fieldname": "orientation",
+   "fieldtype": "Select",
+   "label": "Orientation",
+   "options": "Forward\nReverse"
+  },
+  {
+   "fieldname": "tm",
+   "fieldtype": "Float",
+   "label": "Tm"
+  },
+  {
+   "fieldname": "bind_position",
+   "fieldtype": "Data",
+   "label": "Bind position"
+  },
+  {
+   "fieldname": "fragment_size",
+   "fieldtype": "Data",
+   "label": "Fragment size"
+  },
+  {
+   "fieldname": "organism",
+   "fieldtype": "Data",
+   "label": "Organism"
+  },
+  {
+   "fieldname": "application",
+   "fieldtype": "Data",
+   "label": "Application (pcr / rt / sdm / etc)"
+  },
+  {
+   "fieldname": "restriction_site",
+   "fieldtype": "Data",
+   "label": "Restriction site"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "catalog_num",
+   "fieldtype": "Data",
+   "label": "Catalog number"
+  },
+  {
+   "fieldname": "units",
+   "fieldtype": "Data",
+   "label": "Units"
+  },
+  {
+   "fieldname": "web_page",
+   "fieldtype": "Data",
+   "label": "Web page"
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Long Text",
+   "label": "Sequence"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_hxax",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5rph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0aet",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 01:45:49.320551",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Primer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

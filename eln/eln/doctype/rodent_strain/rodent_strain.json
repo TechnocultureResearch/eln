@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{rodent_strain}-{####}",
+ "creation": "2023-02-26 16:54:23.027126",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rodent_strain",
+  "section_break_cxwf",
+  "alt_name",
+  "transgene",
+  "column_break_6l5l",
+  "genotype",
+  "phenotype",
+  "source",
+  "section_break_qpos",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "rodent_strain",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_cxwf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "alt_name",
+   "fieldtype": "Data",
+   "label": "Alternative Name"
+  },
+  {
+   "fieldname": "transgene",
+   "fieldtype": "Data",
+   "label": "Transgene"
+  },
+  {
+   "fieldname": "column_break_6l5l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "genotype",
+   "fieldtype": "Data",
+   "label": "Genotype"
+  },
+  {
+   "fieldname": "phenotype",
+   "fieldtype": "Data",
+   "label": "Phenotype"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "section_break_qpos",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 16:54:44.152650",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Rodent Strain",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

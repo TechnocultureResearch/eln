@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-26 17:25:14.017589",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "antibody_name",
+  "section_break_2pvz",
+  "alt_name",
+  "clonality",
+  "raised_in",
+  "antigen",
+  "tags",
+  "clone",
+  "column_break_llbp",
+  "isotype",
+  "prep_date",
+  "reacts_with",
+  "source",
+  "manufacturer",
+  "catalog_number",
+  "web_page",
+  "section_break_mycp",
+  "description",
+  "application"
+ ],
+ "fields": [
+  {
+   "fieldname": "antibody_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2pvz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "alt_name",
+   "fieldtype": "Data",
+   "label": "Alternative Name"
+  },
+  {
+   "fieldname": "clonality",
+   "fieldtype": "Select",
+   "label": "Clonality",
+   "options": "None\nPolyclonal\nMonoclonal"
+  },
+  {
+   "fieldname": "raised_in",
+   "fieldtype": "Select",
+   "label": "Raised In",
+   "options": "Mouse\nChicken\nRabbit\nHorse"
+  },
+  {
+   "fieldname": "antigen",
+   "fieldtype": "Data",
+   "label": "Antigen / immunogen"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags / fluorophores"
+  },
+  {
+   "fieldname": "clone",
+   "fieldtype": "Data",
+   "label": "Clone"
+  },
+  {
+   "fieldname": "column_break_llbp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "isotype",
+   "fieldtype": "Data",
+   "label": "Isotype"
+  },
+  {
+   "fieldname": "prep_date",
+   "fieldtype": "Date",
+   "label": "Preparation date"
+  },
+  {
+   "fieldname": "reacts_with",
+   "fieldtype": "Data",
+   "label": "Reacts with"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "catalog_number",
+   "fieldtype": "Data",
+   "label": "Catalog number"
+  },
+  {
+   "fieldname": "web_page",
+   "fieldtype": "Data",
+   "label": "Web Page"
+  },
+  {
+   "fieldname": "section_break_mycp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "application",
+   "fieldtype": "Select",
+   "label": "Application",
+   "options": "Affinity Purification\nAgglutination\nBlocking\nCellular Activation\nChIP\nCompetitive Binding Assays\nDot Blot\nElectron Microscopy\nElectrophoretic Mobility Shift Assay\nELISA\nEnzyme Immunoassay\nFlow Cytometry\nFunctional Studies\nGel Supershift Assays\nHot Start PCR\nImmunoassay\nImmunocytochemistry\nImmunodiffusion\nImmunoelectrophoresis\nImmunofluorescence\nImmunohistochemistry\nImmunoprecipitation\nImmunoprecipitation\nIn situ hybridisation\nIndirect ELISA\nInhibition Assay\nMass Spectrometry\nMicrocytotoxicity Testing\nNorthern Blot\nRadioimmunoassay\nReal Time PCR\nRNAse Protection\nReal Time PCR\nSDS-PAGE\nSouthern Blot\nThin Layer Chromatography\nWestern Blot"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 17:34:59.173378",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Antibody",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

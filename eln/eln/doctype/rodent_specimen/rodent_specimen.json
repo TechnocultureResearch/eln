@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{rodent_specimen_name}-{DD}{MM}{YY}-{####}",
+ "creation": "2023-02-26 16:59:57.875508",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rodent_specimen_name",
+  "section_break_ojfu",
+  "alternative_name",
+  "ethics_approval",
+  "experiment",
+  "strain",
+  "sex",
+  "female_parent",
+  "male_parent",
+  "dob",
+  "column_break_tozk",
+  "ear_tag",
+  "coat_tag",
+  "genotype",
+  "phenotype",
+  "status",
+  "cage",
+  "source",
+  "section_break_crts",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "rodent_specimen_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternative_name",
+   "fieldtype": "Data",
+   "label": "Alternative Name"
+  },
+  {
+   "fieldname": "ethics_approval",
+   "fieldtype": "Data",
+   "label": "Ethics Approval"
+  },
+  {
+   "fieldname": "experiment",
+   "fieldtype": "Data",
+   "label": "Experiment"
+  },
+  {
+   "fieldname": "strain",
+   "fieldtype": "Link",
+   "label": "Strain",
+   "options": "Rodent Strain"
+  },
+  {
+   "fieldname": "section_break_ojfu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "female_parent",
+   "fieldtype": "Link",
+   "label": "Female Parent",
+   "options": "Rodent Specimen"
+  },
+  {
+   "fieldname": "male_parent",
+   "fieldtype": "Link",
+   "label": "Male Parent",
+   "options": "Rodent Specimen"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_tozk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ear_tag",
+   "fieldtype": "Data",
+   "label": "Ear Tag"
+  },
+  {
+   "fieldname": "coat_tag",
+   "fieldtype": "Data",
+   "label": "Coat Tag"
+  },
+  {
+   "fieldname": "genotype",
+   "fieldtype": "Data",
+   "label": "Genotype"
+  },
+  {
+   "fieldname": "phenotype",
+   "fieldtype": "Data",
+   "label": "Phenotype"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Alive\nDead\nMissing\nSacrificed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cage",
+   "fieldtype": "Link",
+   "label": "Cage",
+   "options": "Rodent Cage"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "section_break_crts",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "M\nF\n?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-26 17:17:41.570859",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Rodent Specimen",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
