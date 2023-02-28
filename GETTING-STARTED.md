@@ -2,12 +2,17 @@
 
 ## Dependencies
 > Just follow Getting Started guide on Frappe Framework
+- Linux (Install Ubuntu or VirtualBox)
 - Python 3.9 (Use Pyenv if you have multiple python versions)
 - Bench CLI (Frappe Framework)
 - MariaDB
 - NodeJS
 
 ## New to Frappe?
+### Easy Course
+- https://frappe.school/courses/frappe-framework-tutorial
+- 
+### Documentation
 - [Frappe Docs](https://frappeframework.com/docs/user/en)
 - [Frappe Bench](https://frappeframework.com/docs/user/en/bench)
 - [Frappe DocTypes](https://frappeframework.com/docs/v14/user/en/basics/doctypes)
