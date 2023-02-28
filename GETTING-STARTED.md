@@ -11,7 +11,8 @@
 - [Frappe Docs](https://frappeframework.com/docs/user/en)
 - [Frappe Bench](https://frappeframework.com/docs/user/en/bench)
 - [Frappe DocTypes](https://frappeframework.com/docs/v14/user/en/basics/doctypes)
-- [Frappe JS SDK](https://github.com/nikkothari22/frappe-js-sdk)
+- [Frappe React SDK](https://github.com/nikkothari22/frappe-react-sdk)
+- [Frappe Types Generator](https://github.com/nikkothari22/frappe-types)
 
 ### Key Words to know
 - Doctype: A document type. A table in the database. A model in the backend. A form in the frontend.
