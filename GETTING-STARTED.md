@@ -2,16 +2,22 @@
 
 ## Dependencies
 > Just follow Getting Started guide on Frappe Framework
+- Linux (Install Ubuntu or VirtualBox)
 - Python 3.9 (Use Pyenv if you have multiple python versions)
 - Bench CLI (Frappe Framework)
 - MariaDB
 - NodeJS
 
 ## New to Frappe?
+### Easy Course
+- https://frappe.school/courses/frappe-framework-tutorial
+- 
+### Documentation
 - [Frappe Docs](https://frappeframework.com/docs/user/en)
 - [Frappe Bench](https://frappeframework.com/docs/user/en/bench)
 - [Frappe DocTypes](https://frappeframework.com/docs/v14/user/en/basics/doctypes)
-- [Frappe JS SDK](https://github.com/nikkothari22/frappe-js-sdk)
+- [Frappe React SDK](https://github.com/nikkothari22/frappe-react-sdk)
+- [Frappe Types Generator](https://github.com/nikkothari22/frappe-types)
 
 ### Key Words to know
 - Doctype: A document type. A table in the database. A model in the backend. A form in the frontend.
