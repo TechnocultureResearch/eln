@@ -8,6 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "key_info_tab",
   "gene_name",
   "section_break_jnqh",
   "alt_name",
@@ -15,7 +16,7 @@
   "column_break_k99f",
   "pathway",
   "source",
-  "section_break_4hgo",
+  "details_tab",
   "description"
  ],
  "fields": [
@@ -48,7 +49,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Text Editor",
    "label": "Description"
   },
   {
@@ -60,13 +61,19 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_4hgo",
-   "fieldtype": "Section Break"
+   "fieldname": "key_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Key Info"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 16:44:12.969127",
+ "modified": "2023-03-01 16:44:19.907719",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Gene",
@@ -86,6 +93,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

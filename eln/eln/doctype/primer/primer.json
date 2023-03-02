@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{primer_name}-{orientation}-{Tm}-{fragment_size}",
  "creation": "2023-02-26 01:41:43.623859",
  "default_view": "List",
  "doctype": "DocType",
@@ -8,25 +9,26 @@
  "engine": "InnoDB",
  "field_order": [
   "primer_name",
+  "column_break_psju",
+  "box",
   "section_break_hxax",
-  "alt_name",
-  "tag",
   "orientation",
   "tm",
   "bind_position",
   "fragment_size",
+  "column_break_0aet",
+  "sequence",
+  "description",
+  "additional_details_tab",
+  "column_break_hgqt",
+  "source",
+  "alt_name",
   "column_break_5rph",
   "organism",
   "application",
   "restriction_site",
-  "source",
   "manufacturer",
-  "catalog_num",
-  "units",
-  "web_page",
-  "column_break_0aet",
-  "description",
-  "sequence"
+  "catalog_num"
  ],
  "fields": [
   {
@@ -42,20 +44,17 @@
    "label": "Alternative name"
   },
   {
-   "fieldname": "tag",
-   "fieldtype": "Data",
-   "label": "Label / tag"
-  },
-  {
    "fieldname": "orientation",
    "fieldtype": "Select",
    "label": "Orientation",
-   "options": "Forward\nReverse"
+   "options": "Forward\nReverse",
+   "reqd": 1
   },
   {
    "fieldname": "tm",
    "fieldtype": "Float",
-   "label": "Tm"
+   "label": "Tm",
+   "reqd": 1
   },
   {
    "fieldname": "bind_position",
@@ -64,8 +63,9 @@
   },
   {
    "fieldname": "fragment_size",
-   "fieldtype": "Data",
-   "label": "Fragment size"
+   "fieldtype": "Int",
+   "label": "Fragment size",
+   "reqd": 1
   },
   {
    "fieldname": "organism",
@@ -74,7 +74,7 @@
   },
   {
    "fieldname": "application",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Application (pcr / rt / sdm / etc)"
   },
   {
@@ -84,8 +84,9 @@
   },
   {
    "fieldname": "source",
-   "fieldtype": "Data",
-   "label": "Source"
+   "fieldtype": "Link",
+   "label": "Source Reference / URL",
+   "options": "Paper"
   },
   {
    "fieldname": "manufacturer",
@@ -98,23 +99,14 @@
    "label": "Catalog number"
   },
   {
-   "fieldname": "units",
-   "fieldtype": "Data",
-   "label": "Units"
-  },
-  {
-   "fieldname": "web_page",
-   "fieldtype": "Data",
-   "label": "Web page"
-  },
-  {
    "fieldname": "sequence",
    "fieldtype": "Long Text",
-   "label": "Sequence"
+   "label": "Sequence",
+   "reqd": 1
   },
   {
    "fieldname": "description",
-   "fieldtype": "Long Text",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
@@ -128,14 +120,34 @@
   {
    "fieldname": "column_break_0aet",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "box",
+   "fieldtype": "Link",
+   "label": "Box",
+   "options": "Box"
+  },
+  {
+   "fieldname": "column_break_psju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Additional Details"
+  },
+  {
+   "fieldname": "column_break_hgqt",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 01:45:49.320551",
+ "modified": "2023-03-02 14:04:56.642759",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Primer",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -149,9 +161,54 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal Investigator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Scientist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Research Associate",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Technician",
+   "share": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

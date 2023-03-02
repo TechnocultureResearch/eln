@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Inventory, Shopping Cart, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"KFKaH1tFSd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Projects\",\"col\":4}},{\"id\":\"1BUN9WKACs\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Protocols\",\"col\":4}},{\"id\":\"ooKgOt3Z-i\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Papers\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"0lEONrbvhh\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Experiments\",\"col\":4}},{\"id\":\"HlkkqiHHTk\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Documents\",\"col\":4}},{\"id\":\"M283ifvFKN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>LIMS</b></span>\",\"col\":12}},{\"id\":\"_R5S0HajzW\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mange storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"nP2kXMdStL\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"QFoUyvhtuh\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Inventory\",\"col\":4}},{\"id\":\"H4HxyeJCL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Inventory\",\"col\":4}}]",
+ "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Projects, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"GUh8irvfaQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Objectives\",\"col\":3}},{\"id\":\"uJrlCEKe42\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Upload External Report\",\"col\":3}},{\"id\":\"vpaxqU2thd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Papers\",\"col\":3}},{\"id\":\"PTx9XlU3iq\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KFKaH1tFSd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Projects\",\"col\":4}},{\"id\":\"1BUN9WKACs\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Protocols\",\"col\":4}},{\"id\":\"0lEONrbvhh\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Experiments\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"MHZosMgEkH\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Literature Reviews and Reports\",\"col\":4}},{\"id\":\"sXsqe93-Dt\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2023-02-25 23:37:01.960862",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -14,172 +14,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Storage",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Storage",
-   "link_count": 0,
-   "link_to": "Storage",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Box",
-   "link_count": 0,
-   "link_to": "Box",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Cryogenic Vial Cane",
-   "link_count": 0,
-   "link_to": "Cryogenic Vial Cane",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Equipment",
-   "link_count": 0,
-   "link_to": "Equipment",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Chemical Inventory",
-   "link_count": 5,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Consumable",
-   "link_count": 0,
-   "link_to": "Consumable",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Primer",
-   "link_count": 0,
-   "link_to": "Primer",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Antibody",
-   "link_count": 0,
-   "link_to": "Antibody",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sequence",
-   "link_count": 0,
-   "link_to": "Sequence",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Gene",
-   "link_count": 0,
-   "link_to": "Gene",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Biological Inventory",
-   "link_count": 5,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Cell Line",
-   "link_count": 0,
-   "link_to": "Cell Line",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Bacteria",
-   "link_count": 0,
-   "link_to": "Bacteria",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Rodent Strain",
-   "link_count": 0,
-   "link_to": "Rodent Strain",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Rodent Specimen",
-   "link_count": 0,
-   "link_to": "Rodent Specimen",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Rodent Cage",
-   "link_count": 0,
-   "link_to": "Rodent Cage",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Raw Data",
-   "link_count": 3,
+   "link_count": 4,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -216,43 +52,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Other Documents",
-   "link_count": 3,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Report Document",
+   "label": "Other Raw Data",
    "link_count": 0,
-   "link_to": "Report Document",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "External Report",
-   "link_count": 0,
-   "link_to": "External Report",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Document",
-   "link_count": 0,
-   "link_to": "Document",
+   "link_to": "Other Raw Data",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2023-02-27 02:45:26.952495",
+ "modified": "2023-03-02 13:55:02.560175",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN",
@@ -265,8 +73,8 @@
    "label": "Projects"
   },
   {
-   "document_type": "Paper",
-   "label": "Papers"
+   "document_type": "Report Document",
+   "label": "Literature Reviews and Reports"
   },
   {
    "document_type": "Protocol",
@@ -277,6 +85,7 @@
    "label": "Experiments"
   }
  ],
+ "restrict_to_domain": "Lab",
  "roles": [
   {
    "role": "Principal Investigator"
@@ -292,6 +101,28 @@
   }
  ],
  "sequence_id": 1.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Papers",
+   "link_to": "Paper",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Objectives",
+   "link_to": "Objective",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Upload External Report",
+   "link_to": "External Report",
+   "type": "DocType"
+  }
+ ],
  "title": "ELN"
 }

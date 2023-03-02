@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{type}-{name}-{###}",
+ "autoname": "format:{sequence_name}-{type}",
  "creation": "2023-02-26 01:35:50.657177",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,13 +9,15 @@
  "engine": "InnoDB",
  "field_order": [
   "sequence_name",
+  "column_break_ncgw",
+  "reference",
   "section_break_0c4u",
   "type",
   "sequence",
-  "accession",
-  "organism",
   "column_break_wmk7",
-  "description"
+  "description",
+  "accession",
+  "organism"
  ],
  "fields": [
   {
@@ -29,7 +31,8 @@
    "fieldname": "type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "DNA\nCDNA\nRNA\nProbe (or synthetic)\nProtein (AA)"
+   "options": "\nDNA\nCDNA\nRNA\nProbe (or synthetic)\nProtein (AA)",
+   "reqd": 1
   },
   {
    "fieldname": "sequence",
@@ -50,7 +53,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
@@ -60,11 +63,21 @@
   {
    "fieldname": "column_break_wmk7",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Link",
+   "label": "Source Reference / URL",
+   "options": "Paper"
+  },
+  {
+   "fieldname": "column_break_ncgw",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 01:36:44.270845",
+ "modified": "2023-03-02 14:05:38.570389",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Sequence",
@@ -84,6 +97,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

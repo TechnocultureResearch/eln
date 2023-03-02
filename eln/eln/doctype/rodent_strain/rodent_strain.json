@@ -8,6 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "key_info_tab",
   "rodent_strain",
   "section_break_cxwf",
   "alt_name",
@@ -16,7 +17,7 @@
   "genotype",
   "phenotype",
   "source",
-  "section_break_qpos",
+  "details_tab",
   "description"
  ],
  "fields": [
@@ -61,18 +62,24 @@
    "label": "Source"
   },
   {
-   "fieldname": "section_break_qpos",
-   "fieldtype": "Section Break"
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Data",
-   "label": "Description"
+   "fieldname": "key_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Key Info"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:37.452264",
+ "modified": "2023-03-01 14:17:08.074295",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Rodent Strain",
@@ -92,6 +99,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

@@ -8,35 +8,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "lane_index",
-  "column_break_63h1",
   "description"
  ],
  "fields": [
-  {
-   "fieldname": "lane_index",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Lane",
-   "non_negative": 1,
-   "reqd": 1,
-   "search_index": 1
-  },
   {
    "fieldname": "description",
    "fieldtype": "Text",
    "in_list_view": 1,
    "label": "Lane Description",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_63h1",
-   "fieldtype": "Column Break"
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2023-02-26 01:11:44.319938",
+ "modified": "2023-03-01 15:59:42.538375",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Lane Annotation",

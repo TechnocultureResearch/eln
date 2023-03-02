@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:PAPER-{######}",
+ "autoname": "format:{title}",
  "creation": "2023-02-26 20:44:02.322003",
  "default_view": "List",
  "doctype": "DocType",
@@ -14,14 +14,13 @@
   "title",
   "section_break_ndxo",
   "authors",
-  "doi",
   "pub_date",
   "volume",
   "journal",
   "column_break_dleo",
   "abstract",
   "notes_tab",
-  "notes"
+  "notes_table"
  ],
  "fields": [
   {
@@ -37,11 +36,6 @@
    "label": "Publication Date"
   },
   {
-   "fieldname": "doi",
-   "fieldtype": "Data",
-   "label": "DOI"
-  },
-  {
    "fieldname": "volume",
    "fieldtype": "Data",
    "label": "Volume"
@@ -49,7 +43,7 @@
   {
    "fieldname": "url",
    "fieldtype": "Data",
-   "label": "URL",
+   "label": "URL / DOI",
    "reqd": 1
   },
   {
@@ -66,11 +60,6 @@
    "fieldname": "abstract",
    "fieldtype": "Long Text",
    "label": "Abstract"
-  },
-  {
-   "fieldname": "notes",
-   "fieldtype": "Text Editor",
-   "label": "Notes"
   },
   {
    "fieldname": "section_break_ndxo",
@@ -93,11 +82,17 @@
   {
    "fieldname": "column_break_dleo",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes_table",
+   "fieldtype": "Table",
+   "label": "Notes",
+   "options": "Notes Row"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-27 03:07:15.937773",
+ "modified": "2023-03-01 15:32:51.200068",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Paper",
@@ -167,6 +162,7 @@
  ],
  "quick_entry": 1,
  "search_fields": "title,authors",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{gel_type}-{DD}{MM}{YY}-{###}",
+ "autoname": "format:{gel_type}-{DD}-{MM}-{YY}-{##}",
  "creation": "2023-02-26 00:55:50.670275",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,9 +9,10 @@
  "engine": "InnoDB",
  "field_order": [
   "gel_type",
+  "gel_ratio",
   "gel_photo",
   "column_break_i7r4",
-  "gel_ratio",
+  "author",
   "witness",
   "section_break_ulzw",
   "lane_annotation"
@@ -27,11 +28,12 @@
   },
   {
    "fieldname": "witness",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Witness"
+   "label": "Witnessed By",
+   "options": "User"
   },
   {
    "fieldname": "gel_photo",
@@ -57,13 +59,21 @@
   {
    "fieldname": "gel_ratio",
    "fieldtype": "Data",
-   "label": "Gel Ratio"
+   "label": "Gel Ratio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "label": "Captured By",
+   "options": "User",
+   "reqd": 1
   }
  ],
  "image_field": "gel_photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 01:25:02.553547",
+ "modified": "2023-03-01 16:41:43.846054",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Electrophoresis Run",
@@ -130,6 +140,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

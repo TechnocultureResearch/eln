@@ -20,8 +20,13 @@
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
- "links": [],
- "modified": "2023-02-26 23:57:57.509052",
+ "links": [
+  {
+   "link_doctype": "Experiment",
+   "link_fieldname": "title"
+  }
+ ],
+ "modified": "2023-03-01 14:55:51.060813",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Experiment Row",

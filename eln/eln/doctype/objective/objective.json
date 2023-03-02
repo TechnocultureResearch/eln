@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{title}-{MM}-{YY}",
+ "creation": "2023-03-01 15:49:33.909098",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "key_info_tab",
+  "title",
+  "column_break_x11v",
+  "section_break_p27c",
+  "objectives",
+  "details_tab",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "objectives",
+   "fieldtype": "Table",
+   "label": "Objectives",
+   "options": "Objective Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_x11v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_p27c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "key_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Key Info"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-01 16:38:42.962084",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Objective",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

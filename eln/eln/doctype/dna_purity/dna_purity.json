@@ -8,23 +8,36 @@
  "engine": "InnoDB",
  "field_order": [
   "reading_260",
-  "reading_280"
+  "reading_280",
+  "instrument"
  ],
  "fields": [
   {
    "fieldname": "reading_260",
    "fieldtype": "Data",
-   "label": "OD (260nm)"
+   "in_list_view": 1,
+   "label": "OD (260nm)",
+   "reqd": 1
   },
   {
    "fieldname": "reading_280",
    "fieldtype": "Data",
-   "label": "OD (280nm)"
+   "in_list_view": 1,
+   "label": "OD (280nm)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instrument",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Instrument",
+   "options": "Instrument",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:19:02.280245",
+ "modified": "2023-03-01 16:07:16.393408",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "DNA Purity",

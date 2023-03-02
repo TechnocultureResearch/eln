@@ -10,18 +10,18 @@
  "field_order": [
   "title",
   "column_break_tdko",
+  "authors",
   "duration",
   "section_break_ljro",
-  "description",
-  "procedure",
-  "credentials_tab",
+  "objective",
+  "steps",
+  "linked_documents_tab",
   "references",
-  "authors",
   "amended_from",
-  "section_break_xno3",
-  "sign_pi",
+  "credentials_tab",
+  "sign_auth",
   "column_break_imi0",
-  "sign_auth"
+  "sign_pi"
  ],
  "fields": [
   {
@@ -35,16 +35,6 @@
    "fieldname": "duration",
    "fieldtype": "Duration",
    "label": "Duration"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
-  },
-  {
-   "fieldname": "procedure",
-   "fieldtype": "Text Editor",
-   "label": "Procedure"
   },
   {
    "fieldname": "references",
@@ -80,29 +70,43 @@
    "label": "Author Signature"
   },
   {
-   "fieldname": "section_break_xno3",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "column_break_imi0",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "authors",
-   "fieldtype": "Table",
+   "fieldtype": "Table MultiSelect",
    "label": "Authors",
-   "options": "Author Row"
+   "options": "Author Row",
+   "reqd": 1
   },
   {
    "fieldname": "credentials_tab",
    "fieldtype": "Tab Break",
    "label": "Credentials"
+  },
+  {
+   "fieldname": "steps",
+   "fieldtype": "Table",
+   "label": "Steps",
+   "options": "Step Row"
+  },
+  {
+   "fieldname": "linked_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Linked Documents"
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-27 03:02:26.598336",
+ "modified": "2023-03-02 12:58:07.848151",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Protocol",

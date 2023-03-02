@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-01 14:28:03.231195",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "objective",
+  "priority"
+ ],
+ "fields": [
+  {
+   "fieldname": "objective",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Objective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "LOW\nNORMAL\nHIGH",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-02 13:10:03.625619",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Objective Item",
+ "nsm_parent_field": "parent_objective_row",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

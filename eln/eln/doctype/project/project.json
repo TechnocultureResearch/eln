@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:PROJ-{####}",
+ "autoname": "format:{project_name}-{####}",
  "creation": "2023-02-26 23:33:42.868488",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,18 +9,22 @@
  "engine": "InnoDB",
  "field_order": [
   "project_name",
-  "parent_project",
-  "is_group",
+  "objective",
+  "pi",
   "column_break_epnc",
   "lft",
   "rgt",
+  "parent_project",
   "old_parent",
+  "is_group",
   "section_break_cjsh",
   "description",
   "documents_tab",
   "experiments",
+  "docs",
+  "tab_break_brxg",
   "papers",
-  "docs"
+  "amended_from"
  ],
  "fields": [
   {
@@ -59,12 +63,6 @@
    "options": "Project"
   },
   {
-   "fieldname": "parent_project",
-   "fieldtype": "Link",
-   "label": "Parent Project",
-   "options": "Project"
-  },
-  {
    "fieldname": "experiments",
    "fieldtype": "Table",
    "label": "Experiments",
@@ -79,7 +77,7 @@
   {
    "fieldname": "docs",
    "fieldtype": "Table",
-   "label": "Documents",
+   "label": "Literature Review",
    "options": "Document Row"
   },
   {
@@ -99,13 +97,48 @@
    "fieldname": "documents_tab",
    "fieldtype": "Tab Break",
    "label": "Documents"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pi",
+   "fieldtype": "Link",
+   "label": "PI",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tab_break_brxg",
+   "fieldtype": "Tab Break",
+   "label": "Key References"
+  },
+  {
+   "fieldname": "parent_project",
+   "fieldtype": "Link",
+   "label": "Parent",
+   "options": "Project"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-02-27 03:11:04.680453",
+ "modified": "2023-03-02 12:57:07.180893",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Project",
@@ -124,11 +157,58 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal Investigator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Scientist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Research Associate",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Technician",
+   "share": 1
   }
  ],
+ "quick_entry": 1,
+ "search_fields": "project_name,pi",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "project_name",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1

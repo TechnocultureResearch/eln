@@ -8,6 +8,11 @@
  "engine": "InnoDB",
  "field_order": [
   "equipment_name",
+  "column_break_vpht",
+  "storage",
+  "section_break_uuvi",
+  "description",
+  "vendor_details_tab",
   "section_break_8nir",
   "manufacturer",
   "serial_number",
@@ -16,10 +21,7 @@
   "barcode",
   "model_number",
   "purchase_date",
-  "warranty_expiration_date",
-  "section_break_uuvi",
-  "description",
-  "storage"
+  "warranty_expiration_date"
  ],
  "fields": [
   {
@@ -78,22 +80,32 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Long Text",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
    "fieldname": "storage",
    "fieldtype": "Link",
    "label": "Storage Location",
-   "options": "Storage"
+   "options": "Storage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vpht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Vendor Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:00.321357",
+ "modified": "2023-03-02 13:01:17.887877",
  "modified_by": "Administrator",
  "module": "ELN",
- "name": "Equipment",
+ "name": "Instrument",
  "owner": "Administrator",
  "permissions": [
   {
@@ -105,6 +117,48 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal Investigator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Scientist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Research Associate",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Technician",
    "share": 1,
    "write": 1
   }

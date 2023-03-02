@@ -9,9 +9,10 @@
  "engine": "InnoDB",
  "field_order": [
   "box_name",
-  "type",
-  "column_break_cgcu",
   "color",
+  "column_break_cgcu",
+  "storage",
+  "type",
   "section_break_pyna",
   "description"
  ],
@@ -46,11 +47,18 @@
   {
    "fieldname": "section_break_pyna",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "storage",
+   "fieldtype": "Link",
+   "label": "Storage",
+   "options": "Storage",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 23:29:01.921226",
+ "modified": "2023-03-01 16:44:43.338028",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Box",
@@ -70,6 +78,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

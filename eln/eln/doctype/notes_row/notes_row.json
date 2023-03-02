@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-01 14:40:01.440384",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "author",
+  "column_break_3y7n",
+  "points"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "label": "Author",
+   "options": "Author Row"
+  },
+  {
+   "fieldname": "column_break_3y7n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "points",
+   "fieldtype": "Text Editor",
+   "label": "Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-01 14:42:54.204413",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Notes Row",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -9,13 +9,13 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
+  "attachments",
   "column_break_8pnm",
   "protocol",
+  "experimenter",
   "witness",
-  "attachments",
   "section_break_f6mt",
   "description",
-  "procedure",
   "raw_data_tab",
   "raw_data",
   "conclusion_tab",
@@ -24,11 +24,11 @@
   "credentials_tab",
   "amended_from",
   "section_break_cbzf",
-  "sign_pi",
-  "column_break_xep7",
   "sign_exp",
+  "column_break_xep7",
+  "sign_witness",
   "column_break_zsvg",
-  "sign_witness"
+  "sign_pi"
  ],
  "fields": [
   {
@@ -42,11 +42,6 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
-  },
-  {
-   "fieldname": "procedure",
-   "fieldtype": "Text Editor",
-   "label": "Procedure"
   },
   {
    "fieldname": "results",
@@ -89,9 +84,9 @@
   },
   {
    "fieldname": "witness",
-   "fieldtype": "Link",
+   "fieldtype": "Table MultiSelect",
    "label": "Witness",
-   "options": "User",
+   "options": "Author Row",
    "reqd": 1
   },
   {
@@ -141,12 +136,20 @@
    "fieldtype": "Table",
    "label": "Raw Data Table",
    "options": "Raw Data Row"
+  },
+  {
+   "fieldname": "experimenter",
+   "fieldtype": "Link",
+   "label": "Experimenter",
+   "options": "Author Row",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-27 03:17:28.992394",
+ "modified": "2023-03-02 13:24:39.205963",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Experiment",
@@ -164,69 +167,24 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Principal Investigator",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Scientist",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Research Associate",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Technician",
-   "share": 1,
-   "write": 1
   }
  ],
- "search_fields": "title",
+ "quick_entry": 1,
+ "search_fields": "title,experimenter,protocol",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [
   {
-   "color": "Blue",
-   "title": "Drafting"
+   "color": "Gray",
+   "title": "Draft"
+  },
+  {
+   "color": "Red",
+   "title": "Awaiting Verification"
   },
   {
    "color": "Green",
-   "title": "Submitted"
-  },
-  {
-   "color": "Blue",
-   "title": "Result Approved"
+   "title": "Verified"
   }
  ],
  "title_field": "title",

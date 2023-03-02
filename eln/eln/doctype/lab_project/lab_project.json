@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{project_name}-{####}",
+ "creation": "2023-02-26 23:33:42.868488",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "objective",
+  "pi",
+  "column_break_epnc",
+  "lft",
+  "rgt",
+  "old_parent",
+  "is_group",
+  "section_break_cjsh",
+  "description",
+  "documents_tab",
+  "experiments",
+  "docs",
+  "tab_break_brxg",
+  "papers",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pi",
+   "fieldtype": "Link",
+   "label": "PI",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "column_break_epnc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Lab Project"
+  },
+  {
+   "fieldname": "section_break_cjsh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "Experiments",
+   "options": "Experiment Row"
+  },
+  {
+   "fieldname": "papers",
+   "fieldtype": "Table",
+   "label": "Key Papers",
+   "options": "Paper Row"
+  },
+  {
+   "fieldname": "docs",
+   "fieldtype": "Table",
+   "label": "Literature Review",
+   "options": "Document Row"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lab Project",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_break_brxg",
+   "fieldtype": "Tab Break",
+   "label": "Key References"
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-01 22:11:50.515888",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Lab Project",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal Investigator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Scientist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Research Associate",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Technician",
+   "share": 1
+  }
+ ],
+ "search_fields": "project_name,pi",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

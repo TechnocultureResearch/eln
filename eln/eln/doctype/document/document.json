@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "format:DOC-{DD}{MM}YY}-{####}",
- "creation": "2023-02-26 20:57:09.623702",
+ "creation": "2023-03-01 15:46:46.090590",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -14,6 +14,12 @@
  ],
  "fields": [
   {
+   "fieldname": "title",
+   "fieldtype": "Small Text",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
    "fieldname": "doc",
    "fieldtype": "Text Editor",
    "in_list_view": 1,
@@ -24,17 +30,11 @@
    "fieldname": "spreadsheet",
    "fieldtype": "Attach",
    "label": "Spreadsheet"
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Small Text",
-   "label": "Title",
-   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:19:28.567273",
+ "modified": "2023-03-01 15:46:46.090590",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Document",

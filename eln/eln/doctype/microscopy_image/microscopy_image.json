@@ -9,6 +9,11 @@
  "engine": "InnoDB",
  "field_order": [
   "image",
+  "instrument",
+  "column_break_c6c9",
+  "author",
+  "witness",
+  "section_break_cmsz",
   "description"
  ],
  "fields": [
@@ -22,11 +27,40 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Captured By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "witness",
+   "fieldtype": "Link",
+   "label": "Witnessed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "instrument",
+   "fieldtype": "Link",
+   "label": "Instrument",
+   "options": "Instrument",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_c6c9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cmsz",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:24:07.833449",
+ "modified": "2023-03-01 16:12:00.357789",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Microscopy Image",

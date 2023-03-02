@@ -1,0 +1,44 @@
+{
+  "allow_roles": [
+    {
+      "role": "Principal Investigator"
+    },
+    {
+      "role": "Scientist"
+    },
+    {
+      "role": "Research Associate"
+    },
+    {
+      "role": "System Manager"
+    }
+  ],
+  "creation": "2023-02-27 18:31:36.740569",
+  "docstatus": 0,
+  "doctype": "Module Onboarding",
+  "documentation_url": "https://github.com/TechnocultureResearch/eln",
+  "idx": 0,
+  "is_complete": 1,
+  "modified": "2023-02-27 18:35:09.436940",
+  "modified_by": "Administrator",
+  "module": "ELN",
+  "name": "ELN",
+  "owner": "Administrator",
+  "steps": [
+    {
+      "step": "Set up ELN settings"
+    },
+    {
+      "step": "Add a paper"
+    },
+    {
+      "step": "Set up a new protocol"
+    },
+    {
+      "step": "Try documenting an experiment"
+    }
+  ],
+  "subtitle": "ELN Onboarding",
+  "success_message": "Perfect! Feel free to raise an issue on Github or contribute to this open source ELN.",
+  "title": "ELN Onboarding"
+}

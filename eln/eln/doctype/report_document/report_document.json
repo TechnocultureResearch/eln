@@ -1,43 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:REPORT-{DD}{MM}{YY}-{###}",
+ "autoname": "format:REPORT-{title}-{###}",
  "creation": "2023-02-26 21:08:35.942216",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "authors",
-  "column_break_evqg",
+  "key_info_tab",
   "title",
+  "column_break_evqg",
+  "authors",
+  "objective",
+  "section_break_unst",
+  "intro",
+  "tab_break_zitg",
   "section_break_y2v7",
   "sections",
-  "section_break_ypxv",
-  "description",
+  "conslusion",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "authors",
-   "fieldtype": "Small Text",
-   "label": "Authors"
+   "fieldtype": "Table MultiSelect",
+   "label": "Authors",
+   "options": "Author Row",
+   "reqd": 1
   },
   {
    "fieldname": "title",
    "fieldtype": "Small Text",
-   "label": "Title"
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
   },
   {
    "fieldname": "sections",
    "fieldtype": "Table",
    "label": "Sections",
    "options": "Report Section"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
   },
   {
    "fieldname": "amended_from",
@@ -57,14 +60,40 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "section_break_ypxv",
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective"
+  },
+  {
+   "fieldname": "tab_break_zitg",
+   "fieldtype": "Tab Break",
+   "label": "Content"
+  },
+  {
+   "fieldname": "intro",
+   "fieldtype": "Text Editor",
+   "label": "Introduction"
+  },
+  {
+   "fieldname": "key_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Key Info"
+  },
+  {
+   "fieldname": "conslusion",
+   "fieldtype": "Text Editor",
+   "label": "Conclusion"
+  },
+  {
+   "fieldname": "section_break_unst",
    "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-26 22:27:49.094701",
+ "modified": "2023-03-02 13:23:54.958701",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Report Document",

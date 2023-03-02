@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestEquipment(FrappeTestCase):
+class TestPrimerProbeSet(FrappeTestCase):
 	pass

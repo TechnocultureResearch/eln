@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{primer_set_name}-{MM}-{YY}",
+ "creation": "2023-03-01 16:26:35.892008",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "key_info_tab",
+  "primer_set_name",
+  "column_break_ukxc",
+  "objective",
+  "section_break_cmoo",
+  "primers",
+  "probes",
+  "documents_tab",
+  "description",
+  "references"
+ ],
+ "fields": [
+  {
+   "fieldname": "primer_set_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "primers",
+   "fieldtype": "Table",
+   "label": "Primers",
+   "options": "Primer Row",
+   "reqd": 1
+  },
+  {
+   "fieldname": "probes",
+   "fieldtype": "Table",
+   "label": "Probes",
+   "options": "Sequence Row"
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "key_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Key Info"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "references",
+   "fieldtype": "Table",
+   "label": "References",
+   "options": "Reference"
+  },
+  {
+   "fieldname": "column_break_ukxc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cmoo",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-02 14:07:45.507323",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Primer Probe Set",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

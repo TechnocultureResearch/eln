@@ -14,7 +14,7 @@
   "manufacturer",
   "catalog_number",
   "units",
-  "web_page",
+  "url",
   "description"
  ],
  "fields": [
@@ -33,32 +33,38 @@
   },
   {
    "fieldname": "source",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Source"
   },
   {
    "fieldname": "manufacturer",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Manufacturer"
   },
   {
    "fieldname": "catalog_number",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Catalog Number"
   },
   {
    "fieldname": "units",
-   "fieldtype": "Data"
-  },
-  {
-   "fieldname": "web_page",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Units"
   },
   {
    "fieldname": "description",
-   "fieldtype": "Long Text"
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 16:37:05.906986",
+ "modified": "2023-03-01 11:52:09.432392",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Bacteria",
@@ -78,6 +84,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
