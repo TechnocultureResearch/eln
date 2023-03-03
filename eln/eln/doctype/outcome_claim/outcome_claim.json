@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{OC}-(outcome_type}-{###}",
  "creation": "2023-03-03 19:18:50.677632",
  "default_view": "List",
  "doctype": "DocType",
@@ -12,18 +13,23 @@
   "significance",
   "column_break_ftta",
   "authors",
-  "project",
-  "outcome_type",
-  "section_break_tuyg",
-  "column_break_ufwg",
   "objective",
+  "project",
+  "section_break_tuyg",
   "column_break_uyqr",
+  "outcome_type",
   "outcome_report",
+  "column_break_ufwg",
+  "start_date",
+  "end_date",
   "documents_tab",
   "section_break_l4gc",
   "description",
-  "proof",
+  "section_break_irbo",
   "experiments",
+  "section_break_wlit",
+  "proof",
+  "column_break_hlwq",
   "amended_from"
  ],
  "fields": [
@@ -106,7 +112,8 @@
   },
   {
    "fieldname": "column_break_ufwg",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Time Duration"
   },
   {
    "fieldname": "documents_tab",
@@ -115,7 +122,8 @@
   },
   {
    "fieldname": "column_break_uyqr",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Outcome"
   },
   {
    "fieldname": "proof",
@@ -126,15 +134,40 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "section_break_wlit",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hlwq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_irbo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-03 19:35:13.701634",
+ "modified": "2023-03-03 23:30:31.612477",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Outcome Claim",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

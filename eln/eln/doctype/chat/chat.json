@@ -8,10 +8,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "context_makes_chat_better_section",
   "title",
   "column_break_un95",
   "project",
   "objective",
+  "chat_section",
+  "chat_log",
   "section_break_3wvr",
   "messages"
  ],
@@ -49,11 +52,26 @@
    "fieldtype": "Link",
    "label": "Objective",
    "options": "Objective"
+  },
+  {
+   "fieldname": "chat_log",
+   "fieldtype": "HTML",
+   "label": "Chat Log"
+  },
+  {
+   "fieldname": "context_makes_chat_better_section",
+   "fieldtype": "Section Break",
+   "label": "Context Makes Chat Better"
+  },
+  {
+   "fieldname": "chat_section",
+   "fieldtype": "Section Break",
+   "label": "Chat"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-03 16:51:05.702276",
+ "modified": "2023-03-03 23:42:06.995402",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Chat",

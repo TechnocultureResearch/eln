@@ -1,12 +1,12 @@
 {
  "charts": [],
- "content": "[{\"id\":\"jvN7gvM57T\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">LIMS</span>\",\"col\":12}},{\"id\":\"K75EljsAy0\",\"type\":\"paragraph\",\"data\":{\"text\":\"LIMS (Laboratory Information Management System) allow labs to manage storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"-JaBCDoj_6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Ki_-mKxq4U\",\"type\":\"card\",\"data\":{\"card_name\":\"Sample\",\"col\":4}},{\"id\":\"v4usPfr9gN\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Items\",\"col\":4}},{\"id\":\"1u-3LEL6vK\",\"type\":\"card\",\"data\":{\"card_name\":\"Biomolecule Items\",\"col\":4}},{\"id\":\"1cLX5ejA9h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"m0x-y7Woz2\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Items\",\"col\":4}},{\"id\":\"R9WpuyBuhs\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}}]",
+ "content": "[{\"id\":\"jvN7gvM57T\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">LIMS</span>\",\"col\":12}},{\"id\":\"K75EljsAy0\",\"type\":\"paragraph\",\"data\":{\"text\":\"LIMS (Laboratory Information Management System) allow labs to manage storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"3RSQW-SfSe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sample\",\"col\":3}},{\"id\":\"-JaBCDoj_6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"v4usPfr9gN\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Items\",\"col\":4}},{\"id\":\"Cakzx4YOTL\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Animal Models\",\"col\":4}},{\"id\":\"1u-3LEL6vK\",\"type\":\"card\",\"data\":{\"card_name\":\"Biomolecule Items\",\"col\":4}},{\"id\":\"1cLX5ejA9h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"m0x-y7Woz2\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Items\",\"col\":4}},{\"id\":\"R9WpuyBuhs\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}}]",
  "creation": "2023-03-02 13:29:01.280090",
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "liabilities",
+ "icon": "stock",
  "idx": 0,
  "is_hidden": 0,
  "label": "LIMS",
@@ -55,24 +55,6 @@
    "label": "Cryogenic Vial Cane",
    "link_count": 0,
    "link_to": "Cryogenic Vial Cane",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sample",
-   "link_count": 1,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sample",
-   "link_count": 0,
-   "link_to": "Sample",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -222,16 +204,29 @@
    "type": "Link"
   }
  ],
- "modified": "2023-03-03 18:57:07.069438",
+ "modified": "2023-03-03 23:34:31.276973",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "LIMS",
  "owner": "Administrator",
  "parent_page": "ELN",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Animal Model",
+   "label": "Animal Models"
+  }
+ ],
  "roles": [],
  "sequence_id": 2.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sample",
+   "link_to": "Sample",
+   "type": "DocType"
+  }
+ ],
  "title": "LIMS"
 }

@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CERTISSUE-{recipient}-{###}",
+ "creation": "2023-03-03 22:55:36.758796",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "certificate",
+  "issue_date",
+  "column_break_tuou",
+  "recipient",
+  "co_signer",
+  "section_break_e0gy",
+  "outcome"
+ ],
+ "fields": [
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Certificate",
+   "options": "Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recipient",
+   "fieldtype": "Link",
+   "label": "Recipient",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_signer",
+   "fieldtype": "Link",
+   "label": "Co Signer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "column_break_tuou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Link",
+   "label": "Outcome",
+   "options": "Outcome Claim"
+  },
+  {
+   "fieldname": "section_break_e0gy",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-03 23:24:40.353972",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Certificate Issue",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
