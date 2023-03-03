@@ -200,4 +200,4 @@ app_license = "MIT"
 #	"eln.auth.validate"
 # ]
 
-website_route_rules = [{'from_route': '/dashboard/<path:app_path>', 'to_route': 'dashboard'},]
+website_route_rules = [{'from_route': '/chatgpt/<path:app_path>', 'to_route': 'chatgpt'}, {'from_route': '/dashboard/<path:app_path>', 'to_route': 'dashboard'},]

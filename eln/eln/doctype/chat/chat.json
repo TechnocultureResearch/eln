@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:CHAT-{title}-{DD}-{MM}-{YY}",
+ "autoname": "format:CHAT-{DD}-{MM}-{YY}-{###}",
  "creation": "2023-03-02 14:23:32.041438",
  "default_view": "List",
  "doctype": "DocType",
@@ -13,10 +13,7 @@
   "column_break_un95",
   "objective",
   "context_makes_chat_better_section",
-  "human",
-  "chat_section",
-  "chat_log",
-  "section_break_bvrj",
+  "title",
   "messages"
  ],
  "fields": [
@@ -44,20 +41,9 @@
    "options": "Objective"
   },
   {
-   "fieldname": "chat_log",
-   "fieldtype": "HTML",
-   "label": "Chat Log"
-  },
-  {
    "fieldname": "context_makes_chat_better_section",
    "fieldtype": "Section Break",
    "label": "Human"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "chat_section",
-   "fieldtype": "Section Break",
-   "label": "Chat"
   },
   {
    "collapsible": 1,
@@ -66,20 +52,16 @@
    "label": "Context"
   },
   {
-   "fieldname": "section_break_bvrj",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "human",
+   "fieldname": "title",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "in_list_view": 1,
-   "label": "Human",
-   "reqd": 1
+   "label": "Title"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-04 00:04:41.576101",
+ "modified": "2023-03-04 01:00:45.547321",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Chat",
@@ -99,6 +81,7 @@
    "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -109,6 +92,7 @@
    "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -119,6 +103,7 @@
    "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -129,6 +114,7 @@
    "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -140,9 +126,13 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "title",
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1
