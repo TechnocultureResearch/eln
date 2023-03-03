@@ -1,0 +1,45 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Outcomes Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Experiment Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Report Document Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Protocol Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Chat Count",
+   "width": "Full"
+  },
+  {
+   "chart": "Objective Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Paper Count",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-03-03 17:06:37.000549",
+ "dashboard_name": "Lab Knowledge",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-03-04 00:22:51.266607",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Lab Knowledge",
+ "owner": "Administrator"
+}
