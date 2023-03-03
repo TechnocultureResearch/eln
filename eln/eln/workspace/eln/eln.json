@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Projects, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"GUh8irvfaQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Objectives\",\"col\":3}},{\"id\":\"uJrlCEKe42\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Upload External Report\",\"col\":3}},{\"id\":\"vpaxqU2thd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Papers\",\"col\":3}},{\"id\":\"PTx9XlU3iq\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KFKaH1tFSd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Projects\",\"col\":4}},{\"id\":\"1BUN9WKACs\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Protocols\",\"col\":4}},{\"id\":\"0lEONrbvhh\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Experiments\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"MHZosMgEkH\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Literature Reviews and Reports\",\"col\":4}},{\"id\":\"sXsqe93-Dt\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"id\":\"mEt4-wh4n1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ELN</span>\",\"col\":12}},{\"id\":\"OSDD5vKPnj\",\"type\":\"paragraph\",\"data\":{\"text\":\"Electronic Lab Notebook allows Labs to organise Projects, Experiments, Protocols, Raw Data, etc.\",\"col\":12}},{\"id\":\"5y8ZUKnWat\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Talk to AI\",\"col\":3}},{\"id\":\"vpaxqU2thd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Papers\",\"col\":3}},{\"id\":\"GUh8irvfaQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Objectives\",\"col\":3}},{\"id\":\"uJrlCEKe42\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Upload External Report\",\"col\":3}},{\"id\":\"PTx9XlU3iq\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KFKaH1tFSd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Projects\",\"col\":4}},{\"id\":\"1BUN9WKACs\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Protocols\",\"col\":4}},{\"id\":\"0lEONrbvhh\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Experiments\",\"col\":4}},{\"id\":\"MHZosMgEkH\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Literature Reviews and Reports\",\"col\":4}},{\"id\":\"zQZb5ENDGb\",\"type\":\"card\",\"data\":{\"card_name\":\"Raw Data\",\"col\":4}},{\"id\":\"TS9cPu2SRo\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Talks with AI\",\"col\":4}},{\"id\":\"sXsqe93-Dt\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2023-02-25 23:37:01.960862",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -60,7 +60,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-03-02 13:55:02.560175",
+ "modified": "2023-03-03 16:54:19.996506",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN",
@@ -71,6 +71,10 @@
   {
    "document_type": "Project",
    "label": "Projects"
+  },
+  {
+   "document_type": "Chat",
+   "label": "Talks with AI"
   },
   {
    "document_type": "Report Document",
@@ -102,6 +106,13 @@
  ],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Talk to AI",
+   "link_to": "Chat",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
