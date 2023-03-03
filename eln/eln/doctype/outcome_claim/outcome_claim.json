@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-03 19:18:50.677632",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mfyx",
+  "what_is_the_outcome",
+  "significance",
+  "column_break_ftta",
+  "authors",
+  "project",
+  "outcome_type",
+  "section_break_tuyg",
+  "column_break_ufwg",
+  "objective",
+  "column_break_uyqr",
+  "outcome_report",
+  "documents_tab",
+  "section_break_l4gc",
+  "description",
+  "proof",
+  "experiments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "what_is_the_outcome",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "What is the Outcome?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table MultiSelect",
+   "label": "Authors",
+   "options": "Author Row",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Outcome Claim",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "outcome_report",
+   "fieldtype": "Link",
+   "label": "Key Outcome Report",
+   "options": "Report Document"
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "Key Experiments",
+   "options": "Document Row"
+  },
+  {
+   "fieldname": "outcome_type",
+   "fieldtype": "Select",
+   "label": "Outcome Type",
+   "options": "Major Literature Finding\nBreakthrough Experimental Result\nNew Validated Protocol\nPaper Publication\nPatent Publication\nNew Animal Model\nNew Promising Formulation",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "significance",
+   "fieldtype": "Check",
+   "label": "Is Outcome Internal?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_mfyx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ftta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_l4gc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_tuyg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ufwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "column_break_uyqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "proof",
+   "fieldtype": "Attach",
+   "label": "Proof of Outcome"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-03 19:35:13.701634",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Outcome Claim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-03 17:37:20.032427",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "model_name",
+  "disease",
+  "rodent_specimen",
+  "column_break_dmnd",
+  "protocol",
+  "success_experiment",
+  "section_break_hvwq",
+  "experiments"
+ ],
+ "fields": [
+  {
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rodent_specimen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rodent Specimen",
+   "options": "Rodent Specimen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "disease",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Disease",
+   "reqd": 1
+  },
+  {
+   "fieldname": "protocol",
+   "fieldtype": "Link",
+   "label": "Protocol",
+   "options": "Protocol"
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "All Related Experiments",
+   "options": "Experiment Row"
+  },
+  {
+   "fieldname": "success_experiment",
+   "fieldtype": "Link",
+   "label": "Successful Experiment",
+   "options": "Experiment"
+  },
+  {
+   "fieldname": "column_break_dmnd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hvwq",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-03 17:39:06.321185",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Animal Model",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"jvN7gvM57T\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">LIMS</span>\",\"col\":12}},{\"id\":\"K75EljsAy0\",\"type\":\"paragraph\",\"data\":{\"text\":\"LIMS allow labs to manage storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"-JaBCDoj_6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"R9WpuyBuhs\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}},{\"id\":\"1u-3LEL6vK\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Inventory\",\"col\":4}},{\"id\":\"v4usPfr9gN\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Inventory\",\"col\":4}}]",
+ "content": "[{\"id\":\"jvN7gvM57T\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">LIMS</span>\",\"col\":12}},{\"id\":\"K75EljsAy0\",\"type\":\"paragraph\",\"data\":{\"text\":\"LIMS (Laboratory Information Management System) allow labs to manage storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"-JaBCDoj_6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Ki_-mKxq4U\",\"type\":\"card\",\"data\":{\"card_name\":\"Sample\",\"col\":4}},{\"id\":\"v4usPfr9gN\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Items\",\"col\":4}},{\"id\":\"1u-3LEL6vK\",\"type\":\"card\",\"data\":{\"card_name\":\"Biomolecule Items\",\"col\":4}},{\"id\":\"1cLX5ejA9h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"m0x-y7Woz2\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Items\",\"col\":4}},{\"id\":\"R9WpuyBuhs\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}}]",
  "creation": "2023-03-02 13:29:01.280090",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -62,20 +62,28 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Chemical Inventory",
-   "link_count": 6,
+   "label": "Sample",
+   "link_count": 1,
    "onboard": 0,
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Primer Probe Set",
+   "label": "Sample",
    "link_count": 0,
-   "link_to": "Primer Probe Set",
+   "link_to": "Sample",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chemical Items",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
   },
   {
    "hidden": 0,
@@ -90,47 +98,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Antibody",
-   "link_count": 0,
-   "link_to": "Antibody",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Primer",
-   "link_count": 0,
-   "link_to": "Primer",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sequence",
-   "link_count": 0,
-   "link_to": "Sequence",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Gene",
-   "link_count": 0,
-   "link_to": "Gene",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Biological Inventory",
+   "label": "Biological Items",
    "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
@@ -184,9 +152,77 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Biomolecule Items",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Panel",
+   "link_count": 0,
+   "link_to": "Panel",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Primer Probe Set",
+   "link_count": 0,
+   "link_to": "Primer Probe Set",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Primer",
+   "link_count": 0,
+   "link_to": "Primer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sequence",
+   "link_count": 0,
+   "link_to": "Sequence",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Antibody",
+   "link_count": 0,
+   "link_to": "Antibody",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gene",
+   "link_count": 0,
+   "link_to": "Gene",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-03-03 16:45:59.243575",
+ "modified": "2023-03-03 18:57:07.069438",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "LIMS",

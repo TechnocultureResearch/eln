@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-03 19:00:37.612792",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patent_title",
+  "objective",
+  "column_break_ojgu",
+  "authors",
+  "pdf",
+  "section_break_zqag",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "patent_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patent Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table MultiSelect",
+   "label": "Authors",
+   "options": "Author Row"
+  },
+  {
+   "fieldname": "pdf",
+   "fieldtype": "Attach",
+   "label": "PDF"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Markdown Editor",
+   "label": "Description of Status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patent",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ojgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zqag",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-03 19:03:06.845993",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Patent",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
