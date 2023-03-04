@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{rodent_strain}-{####}",
+ "autoname": "format:RODENT-{rodent_strain}-{####}",
  "creation": "2023-02-26 16:54:23.027126",
  "default_view": "List",
  "doctype": "DocType",
@@ -79,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-01 14:17:08.074295",
+ "modified": "2023-03-05 00:15:11.927851",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Rodent Strain",

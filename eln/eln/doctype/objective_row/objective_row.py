@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class BulletPoints(Document):
+class ObjectiveRow(Document):
 	pass

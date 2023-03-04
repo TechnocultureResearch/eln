@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{rodent_specimen_name}-{DD}{MM}{YY}-{####}",
+ "autoname": "format:SPECIMEN-{rodent_specimen_name}-{MM}-{YY}",
  "creation": "2023-02-26 16:59:57.875508",
  "default_view": "List",
  "doctype": "DocType",
@@ -139,7 +139,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:53.769169",
+ "modified": "2023-03-05 00:17:18.025068",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Rodent Specimen",

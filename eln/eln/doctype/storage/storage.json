@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{type}-{####}",
+ "autoname": "format:STORAGE-{type}-{MM}-{YY}",
  "creation": "2023-02-26 19:10:38.437791",
  "default_view": "List",
  "doctype": "DocType",
@@ -47,7 +47,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-01 16:04:19.708590",
+ "modified": "2023-03-05 00:14:29.864194",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Storage",

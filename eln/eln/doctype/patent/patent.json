@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:PATENT-{patent_title}-{YY}",
  "creation": "2023-03-03 19:00:37.612792",
  "default_view": "List",
  "doctype": "DocType",
@@ -8,18 +9,22 @@
  "engine": "InnoDB",
  "field_order": [
   "patent_title",
-  "objective",
+  "objectives",
   "column_break_ojgu",
-  "authors",
+  "url",
   "pdf",
-  "section_break_zqag",
-  "description",
-  "amended_from"
+  "internal",
+  "internal_section",
+  "authors",
+  "legal_status",
+  "amended_from",
+  "column_break_wgyy",
+  "description"
  ],
  "fields": [
   {
    "fieldname": "patent_title",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Patent Title",
    "reqd": 1
@@ -50,28 +55,51 @@
    "read_only": 1
   },
   {
-   "fieldname": "objective",
-   "fieldtype": "Link",
-   "label": "Objective",
-   "options": "Objective",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_ojgu",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_zqag",
-   "fieldtype": "Section Break"
+   "fieldname": "objectives",
+   "fieldtype": "Table MultiSelect",
+   "label": "Objectives",
+   "options": "Objective Row"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "internal_section",
+   "fieldtype": "Section Break",
+   "label": "Patent By Us"
+  },
+  {
+   "default": "0",
+   "fieldname": "internal",
+   "fieldtype": "Check",
+   "label": "Patent By Us"
+  },
+  {
+   "fieldname": "column_break_wgyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "legal_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Idea Validation\nDrafting\nLegal Drafting\nDrafting Complete\nPublication Initiated\nPublished\nFirst Response Received\nSecond Response Received\nGranted\nRejected"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-03 19:03:06.845993",
+ "modified": "2023-03-05 00:09:46.103460",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Patent",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

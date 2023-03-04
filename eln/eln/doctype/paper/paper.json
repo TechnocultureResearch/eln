@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{title}",
+ "autoname": "format:PAPER-{title}",
  "creation": "2023-02-26 20:44:02.322003",
  "default_view": "List",
  "doctype": "DocType",
@@ -20,6 +20,7 @@
   "column_break_dleo",
   "abstract",
   "notes_tab",
+  "objectives",
   "notes_table"
  ],
  "fields": [
@@ -88,11 +89,17 @@
    "fieldtype": "Table",
    "label": "Notes",
    "options": "Notes Row"
+  },
+  {
+   "fieldname": "objectives",
+   "fieldtype": "Table MultiSelect",
+   "label": "Objectives",
+   "options": "Objective Row"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-01 15:32:51.200068",
+ "modified": "2023-03-05 00:09:03.756358",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Paper",

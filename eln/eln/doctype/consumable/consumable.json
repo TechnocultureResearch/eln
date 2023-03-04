@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{consumer_name}-{manufacturer}-{###}",
+ "autoname": "format:CON-{consumer_name}-{manufacturer}-{MM}-{YY}",
  "creation": "2023-02-26 16:48:32.271333",
  "default_view": "List",
  "doctype": "DocType",
@@ -93,7 +93,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:32.815561",
+ "modified": "2023-03-05 00:17:45.852289",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Consumable",

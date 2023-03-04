@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"jvN7gvM57T\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">LIMS</span>\",\"col\":12}},{\"id\":\"K75EljsAy0\",\"type\":\"paragraph\",\"data\":{\"text\":\"LIMS (Laboratory Information Management System) allow labs to manage storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"3RSQW-SfSe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sample\",\"col\":3}},{\"id\":\"-JaBCDoj_6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"v4usPfr9gN\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Items\",\"col\":4}},{\"id\":\"Cakzx4YOTL\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Animal Models\",\"col\":4}},{\"id\":\"1u-3LEL6vK\",\"type\":\"card\",\"data\":{\"card_name\":\"Biomolecule Items\",\"col\":4}},{\"id\":\"1cLX5ejA9h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"m0x-y7Woz2\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Items\",\"col\":4}},{\"id\":\"R9WpuyBuhs\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}}]",
+ "content": "[{\"id\":\"jvN7gvM57T\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">LIMS</span>\",\"col\":12}},{\"id\":\"K75EljsAy0\",\"type\":\"paragraph\",\"data\":{\"text\":\"LIMS (Laboratory Information Management System) allow labs to manage storage locations, boxes, biological and chemical inventory\",\"col\":12}},{\"id\":\"3RSQW-SfSe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sample\",\"col\":3}},{\"id\":\"-JaBCDoj_6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"v4usPfr9gN\",\"type\":\"card\",\"data\":{\"card_name\":\"Biological Items\",\"col\":4}},{\"id\":\"Cakzx4YOTL\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Animal Models\",\"col\":4}},{\"id\":\"1u-3LEL6vK\",\"type\":\"card\",\"data\":{\"card_name\":\"Biomolecule Items\",\"col\":4}},{\"id\":\"m0x-y7Woz2\",\"type\":\"card\",\"data\":{\"card_name\":\"Chemical Items\",\"col\":4}},{\"id\":\"R9WpuyBuhs\",\"type\":\"card\",\"data\":{\"card_name\":\"Storage\",\"col\":4}}]",
  "creation": "2023-03-02 13:29:01.280090",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -204,7 +204,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-03-03 23:34:31.276973",
+ "modified": "2023-03-05 00:05:31.247533",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "LIMS",

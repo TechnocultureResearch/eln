@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{project_name}-{####}",
+ "autoname": "format:PROJ-{project_name}-{DD}-{MM}-{YY}",
  "creation": "2023-02-26 23:33:42.868488",
  "default_view": "List",
  "doctype": "DocType",
@@ -11,6 +11,8 @@
   "project_name",
   "objective",
   "pi",
+  "start_date",
+  "end_date",
   "column_break_epnc",
   "lft",
   "rgt",
@@ -131,6 +133,17 @@
    "fieldtype": "Link",
    "label": "Parent",
    "options": "Project"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -138,7 +151,7 @@
  "is_submittable": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-03-02 12:57:07.180893",
+ "modified": "2023-03-05 00:08:03.272260",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Project",

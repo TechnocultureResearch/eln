@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{box_name}-{###}",
+ "autoname": "format:BOX-{type}-{box_name}",
  "creation": "2023-02-26 19:16:38.186349",
  "default_view": "List",
  "doctype": "DocType",
@@ -58,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-01 16:44:43.338028",
+ "modified": "2023-03-05 00:13:30.279346",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Box",

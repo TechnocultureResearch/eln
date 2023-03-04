@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{primer_set_name}-{MM}-{YY}",
+ "autoname": "format:PPS-{primer_set_name}-{MM}-{YY}",
  "creation": "2023-03-01 16:26:35.892008",
  "default_view": "List",
  "doctype": "DocType",
@@ -31,7 +31,7 @@
    "fieldname": "primers",
    "fieldtype": "Table",
    "label": "Primers",
-   "options": "Primer Row",
+   "options": "Primer",
    "reqd": 1
   },
   {
@@ -78,7 +78,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-02 14:07:45.507323",
+ "modified": "2023-03-05 00:08:19.481623",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Primer Probe Set",

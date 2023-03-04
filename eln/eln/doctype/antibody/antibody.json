@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:ANTIBODY-{antibody_name}-{MM}-{YY}",
  "creation": "2023-02-26 17:25:14.017589",
  "default_view": "List",
  "doctype": "DocType",
@@ -128,10 +129,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-26 22:20:43.027402",
+ "modified": "2023-03-05 00:16:29.879681",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Antibody",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -147,6 +149,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

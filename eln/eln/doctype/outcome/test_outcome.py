@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestPrimerRow(FrappeTestCase):
+class TestOutcome(FrappeTestCase):
 	pass

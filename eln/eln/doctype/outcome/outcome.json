@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{OC}-{outcome_type}-{###}",
+ "autoname": "format:OUTCOME-{outcome_type}-{###}",
  "creation": "2023-03-03 19:18:50.677632",
  "default_view": "List",
  "doctype": "DocType",
@@ -35,10 +35,14 @@
  ],
  "fields": [
   {
-   "fieldname": "what_is_the_outcome",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "What is the Outcome?",
+   "fieldname": "section_break_mfyx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "outcome_type",
+   "fieldtype": "Select",
+   "label": "Outcome Type",
+   "options": "Major Literature Finding\nBreakthrough Experimental Result\nNew Validated Protocol\nPaper Publication\nPatent Publication\nNew Animal Model\nNew Promising Formulation",
    "reqd": 1
   },
   {
@@ -49,46 +53,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "objective",
-   "fieldtype": "Link",
-   "label": "Objective",
-   "options": "Objective"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Outcome Claim",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
-  },
-  {
-   "fieldname": "outcome_report",
-   "fieldtype": "Link",
-   "label": "Key Outcome Report",
-   "options": "Report Document"
-  },
-  {
-   "fieldname": "experiments",
-   "fieldtype": "Table",
-   "label": "Key Experiments",
-   "options": "Document Row"
-  },
-  {
-   "fieldname": "outcome_type",
-   "fieldtype": "Select",
-   "label": "Outcome Type",
-   "options": "Major Literature Finding\nBreakthrough Experimental Result\nNew Validated Protocol\nPaper Publication\nPatent Publication\nNew Animal Model\nNew Promising Formulation",
-   "reqd": 1
-  },
-  {
    "default": "0",
    "fieldname": "significance",
    "fieldtype": "Check",
@@ -96,16 +60,15 @@
    "reqd": 1
   },
   {
-   "fieldname": "section_break_mfyx",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "column_break_ftta",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_l4gc",
-   "fieldtype": "Section Break"
+   "fieldname": "what_is_the_outcome",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "What is the Outcome?",
+   "reqd": 1
   },
   {
    "collapsible": 1,
@@ -114,47 +77,37 @@
    "label": "Outcome Details"
   },
   {
-   "fieldname": "column_break_ufwg",
-   "fieldtype": "Column Break",
-   "label": "Time Duration"
-  },
-  {
-   "fieldname": "documents_tab",
-   "fieldtype": "Tab Break",
-   "label": "Documents"
-  },
-  {
    "fieldname": "column_break_uyqr",
    "fieldtype": "Column Break",
    "label": "Report"
   },
   {
-   "fieldname": "proof",
-   "fieldtype": "Attach",
-   "label": "Proof of Outcome"
+   "fieldname": "outcome_report",
+   "fieldtype": "Link",
+   "label": "Key Outcome Report",
+   "options": "Report Document"
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective"
   },
   {
-   "fieldname": "section_break_wlit",
-   "fieldtype": "Section Break"
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
   },
   {
-   "fieldname": "column_break_hlwq",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_irbo",
-   "fieldtype": "Section Break"
+   "fieldname": "column_break_ufwg",
+   "fieldtype": "Column Break",
+   "label": "Time Duration"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Start Date",
-   "reqd": 1
+   "label": "Start Date"
   },
   {
    "fieldname": "end_date",
@@ -163,18 +116,64 @@
    "reqd": 1
   },
   {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "section_break_l4gc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_irbo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "Key Experiments",
+   "options": "Document Row"
+  },
+  {
+   "fieldname": "section_break_wlit",
+   "fieldtype": "Section Break"
+  },
+  {
    "fieldname": "url",
    "fieldtype": "Data",
    "label": "Outcome URL"
+  },
+  {
+   "fieldname": "proof",
+   "fieldtype": "Attach",
+   "label": "Proof of Outcome"
+  },
+  {
+   "fieldname": "column_break_hlwq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Outcome",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-04 17:54:11.763793",
+ "modified": "2023-03-04 23:14:27.013216",
  "modified_by": "Administrator",
  "module": "ELN",
- "name": "Outcome Claim",
+ "name": "Outcome",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

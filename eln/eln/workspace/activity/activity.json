@@ -1,0 +1,54 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"GS_FlThCIq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Activity</span>\",\"col\":12}},{\"id\":\"87WNG4TMgQ\",\"type\":\"paragraph\",\"data\":{\"text\":\"Lab activity and outcomes come in many shapes and forms. Validated protocols, Significant Experiments, Publications, Patents and many more can be claimed and tracked here.\",\"col\":12}},{\"id\":\"_F8upanzDB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lab Output\",\"col\":3}},{\"id\":\"F4SmBOn391\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Certificate Issue\",\"col\":3}},{\"id\":\"1dtI02oiGK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"R7Txa0UUZc\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Objectives\",\"col\":4}},{\"id\":\"TDDtN24FV4\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"ToDo\",\"col\":4}},{\"id\":\"WWbQi-ikpe\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Outcomes\",\"col\":4}},{\"id\":\"FJOZXHvj_M\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2023-03-03 17:31:42.510362",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "clap",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Activity",
+ "links": [],
+ "modified": "2023-03-04 15:34:20.115282",
+ "modified_by": "Administrator",
+ "module": "ELN",
+ "name": "Activity",
+ "owner": "Administrator",
+ "parent_page": "ELN",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Outcome Claim",
+   "label": "Outcomes"
+  },
+  {
+   "document_type": "ToDo",
+   "label": "ToDo"
+  },
+  {
+   "document_type": "Objective",
+   "label": "Objectives"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 11.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Certificate Issue",
+   "link_to": "Certificate Issue",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Lab Output",
+   "link_to": "Lab Knowledge",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Activity"
+}

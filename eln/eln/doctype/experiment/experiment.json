@@ -11,6 +11,7 @@
   "title",
   "attachments",
   "column_break_8pnm",
+  "objective",
   "protocol",
   "experimenter",
   "witness",
@@ -143,13 +144,19 @@
    "label": "Experimenter",
    "options": "Author Row",
    "reqd": 1
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Link",
+   "label": "Objective",
+   "options": "Objective"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-02 13:24:39.205963",
+ "modified": "2023-03-04 15:42:01.309706",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Experiment",
