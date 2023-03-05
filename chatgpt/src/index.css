@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+table,
+tr,
+td,
+th {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  word-wrap: break-word;
+}
+
+th {
+  background: #0a2c19;
+  /* text-emphasis: bold; */
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #1bb666;
+}
+
+td {
+  background: #17192f;
+  border: 1px solid #28294d;
+}
