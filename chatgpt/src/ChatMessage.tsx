@@ -1,40 +1,58 @@
 import { ChatEntry } from "./types";
-// import React from 'react';
+import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Copy } from 'iconoir-react';
+import { Check, Copy } from 'iconoir-react';
+import * as Tooltip from '@radix-ui/react-tooltip';
 
 interface ChatMessageProps {
   chat: ChatEntry;
   // className?: React.ComponentProps<'div'>['className'];
 }
 
-function copyToClipboard (copyText: string) {
-  navigator.clipboard.writeText(copyText).then(() => {
-    // Alert the user that the action took place.
-    // Nobody likes hidden stuff being done under the hood!
-    alert("Copied to clipboard");
-  });
-}
-
 const ChatMessage = (props: ChatMessageProps) => {
+  const [copied, setCopied] = useState<boolean>(false);
+
+  const copyToClipboard = (copyText: string) => {
+    navigator.clipboard.writeText(copyText.trim()).then(() => {
+      // Alert the user that the action took place.
+      // Nobody likes hidden stuff being done under the hood!
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    });
+  };
   return (
     <div className="flex flex-row p-4 gap-2 text-xs group hover:bg-gray-900 ml-2 mr-2 bg-blue-900">
       <div className="grow">
         <p className={
-          props.chat.sender === "User" ? "text-gray-600 group-hover:text-green-200 select-none" :
-            "text-green-300 group-hover:text-green-400 select-none" }>{ props.chat.sender }</p>
+          props.chat.role === "user" ? "text-gray-600 group-hover:text-gray-400 select-none" :
+            "text-green-300 group-hover:text-green-200 select-none" }>{ props.chat.role }</p>
         <ReactMarkdown
-          className="grow text-gray-200 text-base group-hover:text-gray-50 selection:bg-green-100 selection:text-green-900"
-          children={ props.chat.message }
+          className="grow text-gray-200 text-base group-hover:text-gray-50"
+          children={ props.chat.content }
           remarkPlugins={ [remarkGfm] }
         />
       </div>
-      <div className="">
-        <button onClick={ () => copyToClipboard(props.chat.message) } className="bg-blue-900 group-hover:bg-gray-800 text-gray-400 group-hover:text-blue-50 flex-none p-1 w-fit">
-          <Copy className="hover:text-red-300" height={ 20 } width={ 20 } />
-        </button>
-      </div>
+
+      <Tooltip.Provider>
+        <Tooltip.Root>
+          <Tooltip.Trigger asChild>
+            <button onClick={ () => copyToClipboard(props.chat.content) } className="bg-blue-900 group-hover:bg-gray-800 text-gray-400 group-hover:text-blue-50 flex-none p-1 w-fit h-fit">
+              { copied ? <Check className="hover:text-green-300" height={ 20 } width={ 20 } /> : <Copy className="hover:text-green-300" height={ 20 } width={ 20 } /> }
+            </button>
+          </Tooltip.Trigger>
+          <Tooltip.Portal>
+            <Tooltip.Content
+              className="data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade text-xs text-gray-900 select-none rounded bg-green-300 px-2 py-2 leading-none will-change-[transform,opacity]"
+              sideOffset={ 5 }
+            >
+              Copy
+            </Tooltip.Content>
+          </Tooltip.Portal>
+        </Tooltip.Root>
+      </Tooltip.Provider>
     </div>
   );
 };

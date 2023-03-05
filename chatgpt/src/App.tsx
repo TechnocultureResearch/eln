@@ -3,14 +3,14 @@ import { FrappeProvider } from 'frappe-react-sdk';
 import Chat from './Chat';
 import { ChatLog } from './types';
 import TextareaAutosize from 'react-textarea-autosize';
-import { OPENAI_API_KEY } from './openai';
+import { chatGPT } from './openai';
 
 function App () {
-  //const [chat_log, setChatLog] = useState<ChatProps>({ log: [] });
-  const [chat_log, setChatLog] = useState<ChatLog>({ log: [{ sender: "User", "message": "hello" }] });
+  const [chat_log, setChatLog] = useState<ChatLog>({ log: [] });
+  // const [chat_log, setChatLog] = useState<ChatLog>({ log: [{ role: "user", "content": "hello" }] });
   const inputRef = useRef<HTMLInputElement>(null);
 
-  let onSend = () => {
+  let onSend = async () => {
     let current = inputRef.current;
     if (current === null || current.value.trim() === "")
     {
@@ -21,9 +21,14 @@ function App () {
 
     current.value = current.value.trim().replaceAll("\n", "\n\n").replaceAll("|\n\n", "|\n");
 
-    new_chat_log.push({ sender: "User", message: current.value });
+    new_chat_log.push({ role: "user", content: current.value });
     setChatLog({ log: new_chat_log });
     current.value = "";
+
+    await chatGPT(chat_log, current.value).then((response) => {
+      new_chat_log.push({ role: "assistant", content: response });
+      setChatLog({ log: new_chat_log });
+    });
   };
 
   return (
