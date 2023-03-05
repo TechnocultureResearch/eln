@@ -9,10 +9,11 @@
  "field_order": [
   "lab_details_tab",
   "lab_name",
-  "lead",
   "url",
+  "column_break_kgar",
+  "lead",
   "advanced_tab",
-  "download"
+  "openai_api_key"
  ],
  "fields": [
   {
@@ -44,16 +45,19 @@
    "label": "Advanced"
   },
   {
-   "description": "Download all the data in the ELN in a csv form.",
-   "fieldname": "download",
-   "fieldtype": "Button",
-   "label": "Download Backup"
+   "fieldname": "openai_api_key",
+   "fieldtype": "Password",
+   "label": "OpenAI API Key"
+  },
+  {
+   "fieldname": "column_break_kgar",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-02-26 22:46:11.623931",
+ "modified": "2023-03-06 03:06:56.609759",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN Settings",

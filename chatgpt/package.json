@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.2",
     "frappe-react-sdk": "^1.1.1",
+    "iconoir": "^6.4.0",
+    "iconoir-react": "^6.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.5",
@@ -20,6 +23,7 @@
     "socket.io-client": "^2.4.0"
   },
   "devDependencies": {
+    "@types/node": "^18.14.6",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
