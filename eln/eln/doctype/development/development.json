@@ -11,14 +11,9 @@
   "project_name",
   "objective",
   "pi",
+  "column_break_epnc",
   "start_date",
   "end_date",
-  "column_break_epnc",
-  "lft",
-  "rgt",
-  "parent_project",
-  "old_parent",
-  "is_group",
   "section_break_cjsh",
   "description",
   "documents_tab",
@@ -37,86 +32,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "lft",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Left",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "rgt",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Right",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_group",
-   "fieldtype": "Check",
-   "label": "Is Group"
-  },
-  {
-   "fieldname": "old_parent",
-   "fieldtype": "Link",
-   "label": "Old Parent",
-   "options": "Project"
-  },
-  {
-   "fieldname": "experiments",
-   "fieldtype": "Table",
-   "label": "Experiments",
-   "options": "Experiment Row"
-  },
-  {
-   "fieldname": "papers",
-   "fieldtype": "Table",
-   "label": "Key Papers",
-   "options": "Paper Row"
-  },
-  {
-   "fieldname": "docs",
-   "fieldtype": "Table",
-   "label": "Literature Review",
-   "options": "Document Row"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
-  },
-  {
-   "fieldname": "column_break_epnc",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_cjsh",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "documents_tab",
-   "fieldtype": "Tab Break",
-   "label": "Documents"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Project",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "pi",
-   "fieldtype": "Link",
-   "label": "PI",
-   "options": "User",
-   "reqd": 1
-  },
-  {
    "fieldname": "objective",
    "fieldtype": "Link",
    "label": "Objective",
@@ -124,15 +39,11 @@
    "reqd": 1
   },
   {
-   "fieldname": "tab_break_brxg",
-   "fieldtype": "Tab Break",
-   "label": "Key References"
-  },
-  {
-   "fieldname": "parent_project",
+   "fieldname": "pi",
    "fieldtype": "Link",
-   "label": "Parent",
-   "options": "Project"
+   "label": "PI",
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "start_date",
@@ -144,17 +55,66 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_epnc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cjsh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "Experiments",
+   "options": "Experiment Row"
+  },
+  {
+   "fieldname": "docs",
+   "fieldtype": "Table",
+   "label": "Literature Review",
+   "options": "Document Row"
+  },
+  {
+   "fieldname": "tab_break_brxg",
+   "fieldtype": "Tab Break",
+   "label": "Key References"
+  },
+  {
+   "fieldname": "papers",
+   "fieldtype": "Table",
+   "label": "Key Papers",
+   "options": "Paper Row"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Development",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
- "is_tree": 1,
  "links": [],
- "modified": "2023-03-05 00:08:03.272260",
+ "modified": "2023-03-05 17:10:01.496740",
  "modified_by": "Administrator",
  "module": "ELN",
- "name": "Project",
+ "name": "Development",
  "naming_rule": "Expression",
  "nsm_parent_field": "parent_project",
  "owner": "Administrator",

@@ -5,5 +5,5 @@
 from frappe.utils.nestedset import NestedSet
 
 
-class LabProject(NestedSet):
+class Development(NestedSet):
 	pass

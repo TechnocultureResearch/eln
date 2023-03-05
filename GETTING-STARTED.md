@@ -35,10 +35,15 @@
 - Get the app `bench get-app https://github.com/TechnocultureResearch/eln`
 	- Install the app `./env/bin/pip install -q -U -e ./apps/eln`
 	- Build the app `bench build --app eln`
+- Install npm packages:
+    - `cd apps/eln/dashboard` and `npm install`
+    - `cd apps/eln/chatgpt` and `npm install`
 - Create a new site `bench new-site eln.test`
 	- Optional: Add hostname `bench --site eln.test add-to-hosts`. So we can visit `http://eln.test:8000/` instead of `http://127.0.0.1:8000/`
 - Install our app onto the new site `bench --site eln.test install-app eln`
 	- Check app is installed on our site `bench --site eln.test list-apps`. This should now include `eln`.
+- Install ERPNext `bench --site eln.test install-app erpnext`
+- Install Frappe Types `bench get-app https://github.com/nikkothari22/frappe-types`
 - Start the server `bench start`
 - Visit the desk(Admin Pannel) `http://eln.test:8000/`
 - Visit the website `http://eln.test:8000/eln`

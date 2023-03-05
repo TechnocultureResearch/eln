@@ -28,7 +28,7 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project",
-   "options": "Project"
+   "options": "Development"
   },
   {
    "fieldname": "column_break_un95",
@@ -61,7 +61,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-04 01:00:45.547321",
+ "modified": "2023-03-05 17:08:20.688752",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Chat",
