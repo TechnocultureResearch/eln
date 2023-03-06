@@ -9,6 +9,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 interface ChatMessageProps {
   chat: ChatEntry;
+  isTester: boolean;
   // className?: React.ComponentProps<'div'>['className'];
 }
 
@@ -26,10 +27,10 @@ const ChatMessage = (props: ChatMessageProps) => {
     });
   };
   return (
-    <div className="flex flex-row p-4 gap-2 text-xs group hover:bg-slate-900 ml-2 mr-2 bg-blue-900">
+    <div className={ "flex flex-row p-4 gap-2 text-xs groupml-2 mr-2 hover:bg-slate-900 bg-blue-900" }>
       <div className="grow">
         <p className={
-          props.chat.role === "user" ? "text-gray-600 group-hover:text-gray-400 select-none" :
+          props.chat.role === ("user" || "tester") ? "text-gray-600 group-hover:text-gray-400 select-none" :
             "text-green-300 group-hover:text-green-200 select-none" }>{ props.chat.role }</p>
         <ReactMarkdown
           className="grow text-gray-200 text-base group-hover:text-gray-50"

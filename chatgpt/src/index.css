@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-table,
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 tr,
 td,
 th {

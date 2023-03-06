@@ -28,6 +28,9 @@ const ToggleMenu = ({ disabled, setPersona }: ToggleMenuProps) => {
       <ToggleGroup.Item className={ toggleGroupItemClasses } value="regulator">
         Regulator
       </ToggleGroup.Item>
+      <ToggleGroup.Item className={ toggleGroupItemClasses } value="IPR">
+        IPR
+      </ToggleGroup.Item>
     </ToggleGroup.Root>
   );
 };

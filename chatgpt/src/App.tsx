@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { FrappeProvider } from 'frappe-react-sdk';
 import Chat from './Chat';
-import { ChatLog, SystemPersona, SystemPrompt } from './types';
+import { ChatLog, SystemPersona } from './types';
+import { SystemPrompt } from './prompts';
 import TextareaAutosize from 'react-textarea-autosize';
 import { chatGPT } from './openai';
 import ToggleMenu from './ToggleMenu';
@@ -21,7 +22,7 @@ function App () {
     else
     {
       let new_chat_log = chat_log.log;
-      new_chat_log.push({ role: "system", content: `Hi, I'm an AI Scientific Assistant. I have been programmed with a particular personality.\n\n My persona is best described by the word: ${persona}. ${SystemPrompt(persona)}` });
+      new_chat_log.push({ role: "system", content: `Hi, I'm a Scientific Assistant (${persona}). ${SystemPrompt(persona)}` });
       setChatLog({ log: new_chat_log });
     }
   }, [persona]);
@@ -35,17 +36,26 @@ function App () {
 
     let new_chat_log = chat_log.log;
 
-    new_chat_log.push({ role: "user", content: current.value });
-    setChatLog({ log: new_chat_log });
-    current.value = "";
-
-    new_chat_log.push({ role: "assistant", content: ". . ." });
-    setChatLog({ log: new_chat_log });
-
-    await chatGPT(chat_log).then((response) => {
-      new_chat_log[new_chat_log.length - 1].content = response;
+    if (current.value.startsWith("!noai"))
+    {
+      new_chat_log.push({ role: "tester", content: current.value });
       setChatLog({ log: new_chat_log });
-    });
+    }
+    else
+    {
+      new_chat_log.push({ role: "user", content: current.value });
+      setChatLog({ log: new_chat_log });
+
+      new_chat_log.push({ role: "assistant", content: ". . ." });
+      setChatLog({ log: new_chat_log });
+
+      await chatGPT(chat_log).then((response) => {
+        new_chat_log[new_chat_log.length - 1].content = response;
+        setChatLog({ log: new_chat_log });
+      });
+    }
+
+    current.value = "";
   };
 
   return (
