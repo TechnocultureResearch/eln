@@ -4,7 +4,7 @@ import Chat from './Chat';
 import { ChatLog, SystemPersona } from './types';
 import { SystemPrompt } from './prompts';
 import TextareaAutosize from 'react-textarea-autosize';
-import { chatGPT } from './openai';
+import { OPENAI_API_KEY, chatGPT } from './openai';
 import ToggleMenu from './ToggleMenu';
 import logo from './assets/logo.png';
 import Div100vh from 'react-div-100vh';
@@ -58,6 +58,8 @@ function App () {
     {
       new_chat_log.push({ role: "tester", content: current.value });
       setChatLog({ log: new_chat_log });
+
+      current.value = "";
     }
     else
     {
@@ -67,25 +69,29 @@ function App () {
       new_chat_log.push({ role: "assistant", content: ". . ." });
       setChatLog({ log: new_chat_log });
 
+      current.value = "";
+
       await chatGPT(chat_log).then((response) => {
         new_chat_log[new_chat_log.length - 1].content = response;
         setChatLog({ log: new_chat_log });
+      }).catch((error) => {
+        new_chat_log[new_chat_log.length - 1].content = `Sorry, I'm having some trouble. Please try again later.\n\n> Details\n> ${error}`;
+        setChatLog({ log: new_chat_log });
       });
     }
-
-    current.value = "";
   };
 
   return (
     <Div100vh className='bg-gray-900 overflow py-6 px-4 flex flex-col'>
       <div className='gap-2 flex'>
         <img src={ logo } className='w-6 h-6 mb-6 border-gray-700 border-2' />
-        { data && <ToggleMenu setPersona={ setPersona } disabled={ chat_log.log.length > 0 } /> }
+        <ToggleMenu setPersona={ setPersona } disabled={ chat_log.log.length > 0 } />
       </div>
       { isValidating && <div className='text-gray-500'>Loading...</div> }
-      { error && <div className='text-red-500'>Error: { error.message }</div> }
-      { data && (
-        <div className='grow'>
+      {/* { error && <div className='text-red-500'>Error: { error.message }</div> } */ }
+      { (data || (error && OPENAI_API_KEY)) && (
+        // <div className='grow flex flex-col w-full'>
+        <>
           <Chat chat={ chat_log } />
           <div className='flex gap-1 bg-gray-900'>
             <TextareaAutosize
@@ -105,7 +111,8 @@ function App () {
               Send
             </button>
           </div>
-        </div>
+          {/* </div> */ }
+        </>
       )
       }
     </Div100vh>

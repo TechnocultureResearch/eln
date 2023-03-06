@@ -28,7 +28,7 @@ export const chatGPT = async (chat_log: ChatLog) => {
       reply = response.data.choices[0].message.content;
     })
     .catch(function (error) {
-      console.log(error);
+      throw new Error(error);
     });
 
   return reply;

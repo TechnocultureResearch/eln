@@ -9,8 +9,8 @@ interface ChatProps {
 
 const Chat = (props: ChatProps) => {
   return (
-    <ScrollArea.Root className='flex flex-col grow bg-gray-900 rounded-md mb-6 overflow-hidden overscroll-auto justify-end'>
-      <ScrollArea.Viewport className="w-full h-full flex">
+    <ScrollArea.Root className='flex grow bg-gray-900 rounded-md mb-6 overscroll-auto'>
+      <ScrollArea.Viewport className="w-full flex items-end">
         {
           props.chat.log.map((chat_message, index) => {
             if (chat_message.role !== "system")
