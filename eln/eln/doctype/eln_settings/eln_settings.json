@@ -20,7 +20,7 @@
    "fieldname": "lab_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Lab Name",
    "reqd": 1
   },
   {
@@ -49,16 +49,17 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "Download all the data in the ELN in a csv form.",
    "fieldname": "openai_api_key",
-   "fieldtype": "Password",
-   "label": "OpenAI API Key"
+   "fieldtype": "Data",
+   "label": "OpenAI API Key",
+   "print_hide": 1,
+   "report_hide": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-03-06 23:53:27.606354",
+ "modified": "2023-03-07 01:29:11.823196",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "ELN Settings",

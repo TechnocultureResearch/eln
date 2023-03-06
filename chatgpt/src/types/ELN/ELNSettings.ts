@@ -10,12 +10,12 @@ export interface ELNSettings{
 	parentfield?: string
 	parenttype?: string
 	idx?: number
-	/**	Name : Data	*/
+	/**	Lab Name : Data	*/
 	lab_name: string
 	/**	URL : Data	*/
 	url?: string
 	/**	Lab Lead : Link - User	*/
 	lead?: string
-	/**	OpenAI API Key : Password - Download all the data in the ELN in a csv form.	*/
+	/**	OpenAI API Key : Data	*/
 	openai_api_key?: string
 }

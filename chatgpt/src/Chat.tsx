@@ -1,8 +1,6 @@
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 import ChatMessage from "./ChatMessage";
 import { ChatLog } from "./types";
-import { useFrappeAuth } from "frappe-react-sdk";
-import { useEffect } from 'react';
 
 interface ChatProps {
   chat: ChatLog;
@@ -10,8 +8,6 @@ interface ChatProps {
 }
 
 const Chat = (props: ChatProps) => {
-  const { currentUser } = useFrappeAuth();
-
   return (
     <ScrollArea.Root className='flex flex-col grow bg-gray-900 rounded-md mb-6 overflow-hidden overscroll-auto justify-end'>
       <ScrollArea.Viewport className="w-full h-full flex">

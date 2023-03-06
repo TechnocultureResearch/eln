@@ -1,18 +1,19 @@
 import axios from 'axios';
 import { ChatLog, SystemPersona } from './types';
+import { useFrappeAuth } from 'frappe-react-sdk';
 
 // 1. Authenticate, get token from OpenAI
 export const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 // 2. Create a completion request
 const OPENAI_CHATGPT_API_URL = "https://api.openai.com/v1/chat/completions";
-const config = {
+const config = (api_key: String) => ({
     headers: { 
-      Authorization: `Bearer ${OPENAI_API_KEY}`, 
+      Authorization: `Bearer ${api_key}`, 
       Accept: "application/json",
       "Content-Type": "application/json;charset=UTF-8"
     }
-};
+});
 
 export const chatGPT = async (chat_log: ChatLog) => {
   let data = {
@@ -22,7 +23,7 @@ export const chatGPT = async (chat_log: ChatLog) => {
   // console.log(data);
 
   let reply = "";
-  await axios.post(OPENAI_CHATGPT_API_URL, data, config)
+  await axios.post(OPENAI_CHATGPT_API_URL, data, config(localStorage.getItem("openai_api_key") || OPENAI_API_KEY))
     .then(function (response) {
       reply = response.data.choices[0].message.content;
     })
