@@ -17,7 +17,7 @@ const config = {
 export const chatGPT = async (chat_log: ChatLog) => {
   let data = {
     "model": "gpt-3.5-turbo",
-    "messages": chat_log.log,
+    "messages": chat_log.log.slice(0, -1) // All but not the last item
   };
   // console.log(data);
 

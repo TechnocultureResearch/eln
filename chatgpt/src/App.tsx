@@ -1,16 +1,30 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FrappeProvider } from 'frappe-react-sdk';
 import Chat from './Chat';
-import { ChatLog, SystemPersona } from './types';
+import { ChatLog, SystemPersona, SystemPrompt } from './types';
 import TextareaAutosize from 'react-textarea-autosize';
 import { chatGPT } from './openai';
 import ToggleMenu from './ToggleMenu';
+import logo from './assets/logo.png';
 
 function App () {
   const [chat_log, setChatLog] = useState<ChatLog>({ log: [] });
   // const [chat_log, setChatLog] = useState<ChatLog>({ log: [{ role: "user", "content": "hello" }] });
   const inputRef = useRef<HTMLInputElement>(null);
   const [persona, setPersona] = useState<SystemPersona>(null);
+
+  useEffect(() => {
+    if (persona === null)
+    {
+      return;
+    }
+    else
+    {
+      let new_chat_log = chat_log.log;
+      new_chat_log.push({ role: "system", content: `Hi, I'm an AI Scientific Assistant. I have been programmed with a particular personality.\n\n My persona is best described by the word: ${persona}. ${SystemPrompt(persona)}` });
+      setChatLog({ log: new_chat_log });
+    }
+  }, [persona]);
 
   let onSend = async () => {
     let current = inputRef.current;
@@ -21,6 +35,7 @@ function App () {
 
     let new_chat_log = chat_log.log;
 
+    // Replace all newlines with two newlines, and then replace all double newlines after a | with a signle newlineAfter a |.
     current.value = current.value.trim().replaceAll("\n", "\n\n").replaceAll("|\n\n", "|\n");
 
     new_chat_log.push({ role: "user", content: current.value });
@@ -40,7 +55,7 @@ function App () {
     <FrappeProvider>
       <div className='bg-gray-900 min-h-screen max-h-screen min-w-screen overflow py-6 px-4 flex flex-col'>
         <div className='gap-2 flex'>
-          <img src='./logo.png' className='w-6 h-6 mb-6 border-gray-700 border-2' />
+          <img src={ logo } className='w-6 h-6 mb-6 border-gray-700 border-2' />
           <ToggleMenu setPersona={ setPersona } disabled={ chat_log.log.length > 0 } />
         </div>
 
