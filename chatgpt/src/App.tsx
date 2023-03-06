@@ -82,16 +82,15 @@ function App () {
   };
 
   return (
-    <Div100vh className='bg-gray-900 overflow py-6 px-4 flex flex-col'>
+    <div className='min-h-full min-w-full bg-gray-900 overflow py-6 px-4 flex flex-col'>
       <div className='gap-2 flex'>
-        <img src={ logo } className='w-6 h-6 mb-6 border-gray-700 border-2' />
+        <img src={ logo } className='flex-none w-6 h-6 mb-6 border-gray-700 border-2' />
         <ToggleMenu setPersona={ setPersona } disabled={ chat_log.log.length > 0 } />
       </div>
       { isValidating && <div className='text-gray-500'>Loading...</div> }
       {/* { error && <div className='text-red-500'>Error: { error.message }</div> } */ }
       { (data || (error && OPENAI_API_KEY)) && (
-        // <div className='grow flex flex-col w-full'>
-        <>
+        <div className='flex flex-col grow'>
           <Chat chat={ chat_log } />
           <div className='flex gap-1 bg-gray-900'>
             <TextareaAutosize
@@ -111,11 +110,9 @@ function App () {
               Send
             </button>
           </div>
-          {/* </div> */ }
-        </>
-      )
-      }
-    </Div100vh>
+        </div>
+      ) }
+    </div>
   );
 };
 

@@ -9,7 +9,7 @@ interface ChatProps {
 
 const Chat = (props: ChatProps) => {
   return (
-    <ScrollArea.Root className='flex grow bg-gray-900 rounded-md mb-6 overscroll-auto'>
+    <ScrollArea.Root className='flex flex-col grow bg-gray-900 rounded-md mb-6 max-h-full'>
       <ScrollArea.Viewport className="w-full flex items-end">
         {
           props.chat.log.map((chat_message, index) => {
