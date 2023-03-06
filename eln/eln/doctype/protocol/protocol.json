@@ -17,8 +17,8 @@
   "steps",
   "linked_documents_tab",
   "references",
-  "amended_from",
   "credentials_tab",
+  "amended_from",
   "sign_auth",
   "column_break_imi0",
   "sign_pi"
@@ -106,7 +106,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-02 12:58:07.848151",
+ "modified": "2023-03-06 23:49:38.202291",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Protocol",
@@ -170,6 +170,7 @@
    "share": 1
   }
  ],
+ "quick_entry": 1,
  "search_fields": "title",
  "sort_field": "modified",
  "sort_order": "DESC",

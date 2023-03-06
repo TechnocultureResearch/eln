@@ -9,7 +9,7 @@ interface ToggleMenuProps {
 }
 
 const ToggleMenu = ({ disabled, setPersona }: ToggleMenuProps) => {
-  const toggleGroupItemClasses = 'hover:bg-gray-600 color-blue-200 data-[state=on]:bg-green-500 data-[state=on]:text-green-50 flex h-full bg-gray-800 text-base items-center justify-center leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-green-200 focus:outline-none px-2';
+  const toggleGroupItemClasses = 'hover:bg-gray-600 color-blue-200 data-[state=on]:bg-green-500 data-[state=on]:text-green-50 flex h-full bg-gray-800 text-base items-center justify-center leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-green-200 focus:outline-none px-2 disabled:opacity-80 disabled:cursor-not-allowed';
 
   return (
     <ToggleGroup.Root

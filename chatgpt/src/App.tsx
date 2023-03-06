@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { FrappeProvider } from 'frappe-react-sdk';
+import { FrappeProvider, useFrappeAuth } from 'frappe-react-sdk';
 import Chat from './Chat';
 import { ChatLog, SystemPersona } from './types';
 import { SystemPrompt } from './prompts';
@@ -7,6 +7,8 @@ import TextareaAutosize from 'react-textarea-autosize';
 import { chatGPT } from './openai';
 import ToggleMenu from './ToggleMenu';
 import logo from './assets/logo.png';
+import { APIKEY } from './GetAPIKey';
+import Div100vh from 'react-div-100vh';
 
 function App () {
   const [chat_log, setChatLog] = useState<ChatLog>({ log: [] });
@@ -60,13 +62,14 @@ function App () {
 
   return (
     <FrappeProvider>
-      <div className='bg-gray-900 min-h-screen max-h-screen min-w-screen overflow py-6 px-4 flex flex-col'>
+      <Div100vh className='bg-gray-900 overflow py-6 px-4 flex flex-col'>
         <div className='gap-2 flex'>
           <img src={ logo } className='w-6 h-6 mb-6 border-gray-700 border-2' />
           <ToggleMenu setPersona={ setPersona } disabled={ chat_log.log.length > 0 } />
         </div>
 
         <Chat chat={ chat_log } />
+        <APIKEY />
         <div className='flex gap-1 bg-gray-900'>
           <TextareaAutosize
             ref={ inputRef }
@@ -85,7 +88,7 @@ function App () {
             Send
           </button>
         </div>
-      </div >
+      </Div100vh>
     </FrappeProvider >
   );
 };
