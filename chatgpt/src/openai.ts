@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { ChatLog } from './types';
+import { ChatLog, SystemPersona } from './types';
 
 // 1. Authenticate, get token from OpenAI
 export const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
@@ -19,7 +19,7 @@ export const chatGPT = async (chat_log: ChatLog) => {
     "model": "gpt-3.5-turbo",
     "messages": chat_log.log,
   };
-  console.log(data);
+  // console.log(data);
 
   let reply = "";
   await axios.post(OPENAI_CHATGPT_API_URL, data, config)
@@ -32,8 +32,3 @@ export const chatGPT = async (chat_log: ChatLog) => {
 
   return reply;
 }
-
-// 3. Send the request to OpenAI
-// 4. Print the response
-// 5. Add the request and response to the history
-// 6. On follow-up requests, use the history as context

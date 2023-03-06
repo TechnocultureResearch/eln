@@ -9,8 +9,8 @@ interface ChatProps {
 
 const Chat = (props: ChatProps) => {
   return (
-    <ScrollArea.Root className='flex flex-col grow bg-gray-900 rounded-md mb-6 overflow-hidden overscroll-auto justify-end'>
-      <ScrollArea.Viewport className="w-full h-full">
+    <ScrollArea.Root className='flex flex-col grow bg-gray-900 rounded-md mb-6 overflow-hidden overscroll-auto justify-end items-center'>
+      <ScrollArea.Viewport className="max-w-[1000px] h-full">
         {
           props.chat.log.map((chat_message, index) => (
             <ChatMessage

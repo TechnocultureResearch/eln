@@ -1,14 +1,16 @@
 import { useRef, useState } from 'react';
 import { FrappeProvider } from 'frappe-react-sdk';
 import Chat from './Chat';
-import { ChatLog } from './types';
+import { ChatLog, SystemPersona } from './types';
 import TextareaAutosize from 'react-textarea-autosize';
 import { chatGPT } from './openai';
+import ToggleMenu from './ToggleMenu';
 
 function App () {
   const [chat_log, setChatLog] = useState<ChatLog>({ log: [] });
   // const [chat_log, setChatLog] = useState<ChatLog>({ log: [{ role: "user", "content": "hello" }] });
   const inputRef = useRef<HTMLInputElement>(null);
+  const [persona, setPersona] = useState<SystemPersona>(null);
 
   let onSend = async () => {
     let current = inputRef.current;
@@ -25,8 +27,11 @@ function App () {
     setChatLog({ log: new_chat_log });
     current.value = "";
 
-    await chatGPT(chat_log, current.value).then((response) => {
-      new_chat_log.push({ role: "assistant", content: response });
+    new_chat_log.push({ role: "assistant", content: ". . ." });
+    setChatLog({ log: new_chat_log });
+
+    await chatGPT(chat_log).then((response) => {
+      new_chat_log[new_chat_log.length - 1].content = response;
       setChatLog({ log: new_chat_log });
     });
   };
@@ -34,8 +39,9 @@ function App () {
   return (
     <FrappeProvider>
       <div className='bg-gray-900 min-h-screen max-h-screen min-w-screen overflow py-6 px-4 flex flex-col'>
-        <div className='flex-none gap-2'>
+        <div className='gap-2 flex'>
           <img src='./logo.png' className='w-6 h-6 mb-6 border-gray-700 border-2' />
+          <ToggleMenu setPersona={ setPersona } disabled={ chat_log.log.length > 0 } />
         </div>
 
         <Chat chat={ chat_log } />
