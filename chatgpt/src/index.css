@@ -20,9 +20,6 @@ th {
   background: #0a2c19;
   /* text-emphasis: bold; */
 
-  padding-top: 10px;
-  padding-bottom: 10px;
-
   border-bottom: 1px solid #1bb666;
 }
 
@@ -53,14 +50,31 @@ h5 {
 
 a {
   /* underline */
-  text-decoration: none;
-  color: #1bb666;
+  text-decoration: underline;
+  color: #a9bbe1;
 }
 
-li {
+a:hover {
+  color: #7c93c8;
+}
+
+li,
+ul,
+ol {
   list-style-type: disc;
+  list-style-position: inside;
 }
 
 pre {
   font-size: small;
+}
+
+ul li {
+  background-color: yellow;
+  line-height: 40px;
+}
+
+ul li li {
+  background-color: red;
+  line-height: 40px;
 }
