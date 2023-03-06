@@ -12,6 +12,8 @@ th {
   padding-bottom: 5px;
 
   word-wrap: break-word;
+
+  font-size: small;
 }
 
 th {
@@ -27,4 +29,38 @@ th {
 td {
   background: #17192f;
   border: 1px solid #28294d;
+}
+
+h1 {
+  color: #1bb666;
+}
+
+h2 {
+  color: #1bb666;
+}
+
+h3 {
+  color: #1bb666;
+}
+
+h4 {
+  color: #1bb666;
+}
+
+h5 {
+  color: #1bb666;
+}
+
+a {
+  /* underline */
+  text-decoration: none;
+  color: #1bb666;
+}
+
+li {
+  list-style-type: disc;
+}
+
+pre {
+  font-size: small;
 }

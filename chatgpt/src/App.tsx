@@ -35,9 +35,6 @@ function App () {
 
     let new_chat_log = chat_log.log;
 
-    // Replace all newlines with two newlines, and then replace all double newlines after a | with a signle newlineAfter a |.
-    current.value = current.value.trim().replaceAll("\n", "\n\n").replaceAll("|\n\n", "|\n");
-
     new_chat_log.push({ role: "user", content: current.value });
     setChatLog({ log: new_chat_log });
     current.value = "";
