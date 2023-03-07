@@ -5,7 +5,7 @@
 pre,
 table {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 tr,
@@ -84,4 +84,10 @@ blockquote {
   background-color: #4e1014;
   border-left: 8px solid #d22f53;
   word-wrap: break-word;
+}
+
+code {
+  font-family: monospace;
+  color: #a9bbe1;
+  font-size: 95%;
 }

@@ -9,7 +9,7 @@ interface ChatProps {
 
 const Chat = (props: ChatProps) => {
   return (
-    <div className='grow flex flex-col max-w-full max-h-full overflow-scroll'>
+    <div className='grow flex flex-col'>
       {
         props.chat.log.map((chat_message, index) => {
           if (chat_message.role !== "system")

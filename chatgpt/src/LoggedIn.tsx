@@ -12,6 +12,9 @@ interface LoggedInProps {
 }
 
 const LoggedIn = (props: LoggedInProps) => {
+  const chat_id = window.location.pathname;
+  console.log(chat_id);
+
   const { data, error } = useFrappeGetDoc<ELNSettings>(
     'ELN Settings',
     'ELN Settings',
@@ -37,7 +40,7 @@ const LoggedIn = (props: LoggedInProps) => {
           <p>There was an error loading the settings.</p>
         </div>
       }
-      { data && <div className='flex flex-col grow'>
+      { data && <div className='flex flex-col grow gap-6'>
         <Chat chat={ props.chat_log } />
         <InputBar chat_log={ props.chat_log } setChatLog={ props.setChatLog } />
       </div>

@@ -35,16 +35,17 @@ const ChatMessage = (props: ChatMessageProps) => {
         <p className={
           props.chat.role === "user" || props.chat.role === "tester" ? "text-gray-600 group-hover:text-gray-400 select-none" :
             "text-green-300 group-hover:text-green-200 select-none" }>{ props.chat.role }</p>
+
         <Tooltip.Provider>
           <Tooltip.Root>
             <Tooltip.Trigger asChild>
-              <button onClick={ () => copyToClipboard(props.chat.content) } className="bg-blue-900 group-hover:bg-gray-800 text-gray-400 group-hover:text-blue-50 flex-none p-1 w-fit h-fit">
-                { copied ? <Check className="hover:text-green-300" height={ 14 } width={ 14 } /> : <Copy className="hover:text-green-300" height={ 14 } width={ 14 } /> }
+              <button onClick={ () => copyToClipboard(props.chat.content) } className="bg-blue-900 group-hover:bg-blue-800 text-blue-400 group-hover:text-blue-50 flex-none p-1 w-fit h-fit">
+                { copied ? <Check className="hover:text-green-200" height={ 14 } width={ 14 } /> : <Copy className="hover:text-green-200" height={ 14 } width={ 14 } /> }
               </button>
             </Tooltip.Trigger>
             <Tooltip.Portal>
               <Tooltip.Content
-                className="data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade text-xs text-gray-900 select-none rounded bg-green-300 px-2 py-2 leading-none will-change-[transform,opacity]"
+                className="data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade text-xs text-blue-900 select-none rounded bg-green-300 px-2 py-2 leading-none will-change-[transform,opacity]"
                 sideOffset={ 5 }
               >
                 Copy
@@ -55,7 +56,7 @@ const ChatMessage = (props: ChatMessageProps) => {
       </div>
 
       <ReactMarkdown
-        className="py-2 text-gray-200 text-sm group-hover:text-gray-100 overflow-x-scroll"
+        className="pt-2 text-gray-200 text-sm group-hover:text-gray-100 overflow-x-scroll"
         children={ props.chat.content }
         remarkPlugins={ [remarkGfm] }
         components={ {
