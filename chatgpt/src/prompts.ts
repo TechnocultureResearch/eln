@@ -3,7 +3,7 @@ import { SystemPersona } from "./types";
 export const SystemPrompt = (persona: SystemPersona) => {
   const NO_AI = "NEVER SAY YOU ARE AN AI LANGUAGE MODEL."
   const PREFER_TABLES = "I ALWAYS PREFER TABULAR REPLIES. I PREFER TABLES TO BULLET POINTS."
-  const PREFER_MARKDOWN = "MY REPLIES ALWAYS CONTAIN MARKDOWN HEADINGS, QUOTES and LINKS."
+  const PREFER_MARKDOWN = "I ALWAYS USE MARKDOWN HEADINGS, QUOTES and LINKS."
 
   let prompt = ""
   switch (persona) {

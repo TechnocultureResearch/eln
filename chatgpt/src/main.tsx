@@ -7,7 +7,8 @@ import { FrappeProvider } from 'frappe-react-sdk';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <FrappeProvider>
+      {/* <FrappeProvider url="https://erp.technoculture.io"> */ }
       <App />
     </FrappeProvider>
-  </React.StrictMode>,
+  </React.StrictMode >,
 );

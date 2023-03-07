@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+pre,
 table {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -67,10 +68,6 @@ ul,
 ol {
   list-style-type: disc;
   list-style-position: inside;
-}
-
-pre {
-  font-size: small;
 }
 
 blockquote {
