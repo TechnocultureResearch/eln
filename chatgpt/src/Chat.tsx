@@ -1,16 +1,13 @@
 import ChatMessage from "./ChatMessage";
-import { ChatLog } from "./types";
+import { useMessageStore } from "./store";
 
-interface ChatProps {
-  chat: ChatLog;
-  // className?: React.ComponentProps<'div'>['className'];
-}
+const Chat = () => {
+  const { messages } = useMessageStore();
 
-const Chat = (props: ChatProps) => {
   return (
     <div className='grow flex flex-col'>
       {
-        props.chat.log?.map((chat_message, index) => {
+        messages.map((chat_message, index) => {
           if (chat_message.role !== "system")
           {
             return (<ChatMessage

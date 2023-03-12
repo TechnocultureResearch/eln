@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { ChatEntry, ChatLog, ChatRole } from './types';
+import { ChatEntry, ChatLog } from './types';
 import { useFrappeCreateDoc, useFrappeGetDoc, useFrappeUpdateDoc, FrappeDoc } from 'frappe-react-sdk';
 import { Chat } from './types/ELN/Chat';
 import { ChatMessage } from './types/ELN/ChatMessage';
@@ -29,7 +29,15 @@ export const useChat = () => {
       // Create a new chat
       createDoc('Chat', {} as Chat).then((data) => {
         console.info('Created new chat: ', data);
-        // TODO: Update the chat_id context
+        // TODO: Route to new chat name
+        // Here is how:
+
+        console.info('Current URL: ', window.location.href);
+        console.info('Current URL: ', window.location.search);
+
+        // const url = new URL(window.location.href);
+        // url.searchParams.set('chat_id', data.name);
+        // window.history.pushState({}, '', url.toString());
       });
     }
   }, [chat_id]);
@@ -56,48 +64,10 @@ export const useChat = () => {
   };
 };
 
-// export const appendChat = (entry: ChatEntry) => {
-// // TODO: convert this to a hook
-
-//   // Create a new chat message
-//   // Get the current chat
-//   // Append the new chat message to the chat
-//   let chat_id = useContext(ChatIdContext)
-//   console.debug("Appending chat: ", chat_id, entry.content, entry.role);
-
-//   if (chat_id === "") {
-//     // Create a new chat
-//     const { createDoc } = useFrappeCreateDoc<Chat>();
-//     createDoc("Chat", {} as Chat).then(
-//       (data) => {
-//         console.info("Created new chat: ", data);
-//         chat_id = data.name;
-//         // TODO: Update the chat_id context
-//       }
-//     )
-//   }
-
-//   // Get the chat
-//   const { data } = useFrappeGetDoc<Chat>("Chat", chat_id);
-//   const { updateDoc } = useFrappeUpdateDoc<Chat>();
-
-//   if (data && data.log) {
-//     updateDoc("Chat", chat_id, 
-//     {
-//       log: [...data.log, {
-//         role: entry.role,
-//         content: entry.content,
-//       } as ChatMessage]
-//     });
-//   }
-
-//   return chat_id;
-// };
-
 export const chatGPT = async (
-  chat_log: ChatLog
+  chat_log: ChatEntry[]
   ): Promise<string> => {
-  const user_prompts = chat_log.log.filter(item => item.role === "user");
+  const user_prompts = chat_log.filter(item => item.role === "user");
   console.info("User Prompt Count: ", user_prompts.length);
 
   if (user_prompts.length === 0) {

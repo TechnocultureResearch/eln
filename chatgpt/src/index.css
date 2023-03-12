@@ -72,17 +72,17 @@ ol {
 
 blockquote {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   padding-left: 20px;
-  /* margin-left: 20px; */
-  padding-right: 20px;
-  font-style: italic;
-  color: #fdfcfb;
-  background-color: #4e1014;
-  border-left: 8px solid #d22f53;
+  margin-left: 5px;
+  padding-right: 10px;
+  /* font-style: italic; */
+  color: #f8fafa;
+  /* background-color: #28294d; */
+  border-left: 2px solid #0d491f;
   word-wrap: break-word;
 }
 

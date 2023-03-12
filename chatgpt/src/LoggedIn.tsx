@@ -5,12 +5,12 @@ import { useEffect } from "react";
 import { useFrappeGetDoc } from "frappe-react-sdk";
 import { ChatLog } from "./types";
 
-interface LoggedInProps {
-  chat_log: ChatLog;
-  setChatLog: (chat_log: ChatLog) => void;
-}
+// interface LoggedInProps {
+//   chat_log: ChatLog;
+//   setChatLog: (chat_log: ChatLog) => void;
+// }
 
-const LoggedIn = (props: LoggedInProps) => {
+const LoggedIn = () => {
   const { data, error } = useFrappeGetDoc<ELNSettings>(
     'ELN Settings',
     'ELN Settings',
@@ -41,11 +41,8 @@ const LoggedIn = (props: LoggedInProps) => {
       {
         data &&
         <div className='flex flex-col grow gap-6'>
-          <Chat chat={ props.chat_log } />
-          <InputBar
-            chat_log={ props.chat_log }
-            setChatLog={ props.setChatLog }
-          />
+          <Chat />
+          <InputBar />
         </div>
       }
     </>
