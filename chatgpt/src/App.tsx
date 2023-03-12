@@ -1,18 +1,31 @@
 import { useEffect, useState } from 'react';
-import { useFrappeAuth } from 'frappe-react-sdk';
-import { ChatLog, SystemPersona } from './types';
+import { useFrappeAuth, useFrappeGetDoc } from 'frappe-react-sdk';
+import { SystemPersona, ChatLog, ChatEntry } from './types';
 import { SystemPrompt } from './prompts';
-
+import { Chat } from './types/ELN/Chat';
+import Div100vh from 'react-div-100vh';
+import LoggedOut from './LoggedOut';
+import LoggedIn from './LoggedIn';
 import ToggleMenu from './ToggleMenu';
 import logo from './assets/logo.png';
-import Div100vh from 'react-div-100vh';
-import LoggedIn from './LoggedIn';
-import LoggedOut from './LoggedOut';
+import { ErrorBoundary } from "react-error-boundary";
+import { useChat } from './openai';
+
+function ErrorFallback ({ error, componentStack, resetErrorBoundary }: any) {
+  return (
+    <div role="alert" className="text-red-400 p-4">
+      <p>Something went wrong:</p>
+      <pre>{ error.message }</pre>
+      <pre>{ componentStack }</pre>
+    </div>
+  );
+}
 
 function App () {
   const { currentUser } = useFrappeAuth();
-  const isLoggedIn = (currentUser === null || currentUser === undefined);
+  let isLoggedIn = false;
 
+  const { chat_id } = useChat();
   const [chat_log, setChatLog] = useState<ChatLog>({ log: [] });
   const [persona, setPersona] = useState<SystemPersona>(null);
 
@@ -23,34 +36,72 @@ function App () {
     }
     else
     {
-      let new_chat_log = chat_log.log;
-      new_chat_log.push({ role: "system", content: `Hi, I'm a Scientific Assistant (${persona}). ${SystemPrompt(persona)}` });
-      setChatLog({ log: new_chat_log });
+      setChatLog({
+        log: [
+          ...chat_log.log,
+          {
+            role: "system",
+            content: `Hi, 
+          I'm a Scientific Assistant (${persona}). 
+          ---
+          ${SystemPrompt(persona)}`
+          } as ChatEntry
+        ]
+      });
     }
   }, [persona]);
 
+  const { data, error } = useFrappeGetDoc<Chat>(
+    'Chat',
+    chat_id,
+    {
+      fields: ['log'],
+    });
+
+  useEffect(() => {
+    if (data && data.log)
+    {
+      // If the chat log is present in the database
+      const messages = data.log.map(item => {
+        return {
+          role: item.role,
+          content: item.content,
+        } as ChatEntry;
+      });
+      setChatLog({ log: messages });
+    }
+  }, [data]);
+
   return (
-    <Div100vh className='bg-gray-900 py-6 px-4 flex flex-col'>
-      <div className='gap-2 flex'>
-        <img src={ logo } className='flex-none w-6 h-6 mb-6 border-gray-700 border-2' />
+    <ErrorBoundary
+      FallbackComponent={ ErrorFallback }
+    >
+      <Div100vh className='bg-gray-900 py-6 px-4 flex flex-col'>
+        <div className='gap-2 flex'>
+          <img src={ logo } className='flex-none w-6 h-6 mb-6 border-gray-700 border-2' />
+          {
+            !isLoggedIn ?
+              <ToggleMenu
+                setPersona={ setPersona }
+                disabled={ chat_log.log.filter(
+                  item => (
+                    (item.role !== "system") && (item.role !== "tester")
+                  )).length > 0 }
+              />
+              : null
+          }
+        </div>
         {
-          !isLoggedIn ?
-            <ToggleMenu
-              setPersona={ setPersona }
-              disabled={ chat_log.log.filter(
-                item => (
-                  (item.role !== "system") && (item.role !== "tester")
-                )).length > 0 }
+          isLoggedIn ?
+            <LoggedOut /> :
+            <LoggedIn
+              chat_log={ chat_log }
+              setChatLog={ setChatLog }
+            // user={ currentUser ? currentUser : "" }
             />
-            : null
         }
-      </div>
-      {
-        isLoggedIn ?
-          <LoggedOut /> :
-          <LoggedIn chat_log={ chat_log } setChatLog={ setChatLog } user={ currentUser } />
-      }
-    </Div100vh>
+      </Div100vh>
+    </ErrorBoundary>
   );
 };
 

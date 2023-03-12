@@ -1,10 +1,12 @@
+export type ChatRole = "user" | "assistant" | "system" | "tester";
+
 export type ChatEntry = {
-  role: "user" | "assistant" | "system" | "tester";
+  role: ChatRole;
   content: string;
 };
 
 export type ChatLog = {
-  log: ChatEntry[];
+  log: Array<ChatEntry>;
 };
 
 export type SystemPersona = "scientist" | "regulator" | "student" | "IPR" | null;

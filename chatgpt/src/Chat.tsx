@@ -1,4 +1,3 @@
-import * as ScrollArea from '@radix-ui/react-scroll-area';
 import ChatMessage from "./ChatMessage";
 import { ChatLog } from "./types";
 
@@ -11,7 +10,7 @@ const Chat = (props: ChatProps) => {
   return (
     <div className='grow flex flex-col'>
       {
-        props.chat.log.map((chat_message, index) => {
+        props.chat.log?.map((chat_message, index) => {
           if (chat_message.role !== "system")
           {
             return (<ChatMessage

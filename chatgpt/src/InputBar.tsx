@@ -1,7 +1,9 @@
 import TextareaAutosize from 'react-textarea-autosize';
-import { chatGPT } from './openai';
-import { ChatLog } from './types';
+import { chatGPT, useChat } from './openai';
+import { ChatLog, ChatEntry } from './types';
 import { useRef } from 'react';
+// import { useFrappeUpdateDoc } from 'frappe-react-sdk';
+// import { ChatIdContext } from './chat_id_context';
 
 interface InputBarProps {
   chat_log: ChatLog;
@@ -10,41 +12,56 @@ interface InputBarProps {
 
 const InputBar = (props: InputBarProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const { chat_id, appendChat } = useChat();
 
-  let onSend = async () => {
-    let current = inputRef.current;
-    if (current === null || current.value.trim() === "")
+  const onSend = async (
+    ref: React.RefObject<HTMLInputElement>,
+    props: InputBarProps
+  ) => {
+    let current = ref.current;
+    console.info("input value: ", current?.value);
+
+    // Check if the input is empty
+    if (current === null || current.value.trim() === "") { return; }
+
+    // Check if the input is a command
+    if (current.value.startsWith("!noai"))
     {
+      props.setChatLog({
+        log: [
+          ...props.chat_log.log,
+          { role: "tester", content: current.value }
+        ]
+      });
+      current.value = "";
       return;
     }
 
-    let new_chat_log = props.chat_log.log;
+    props.chat_log.log.push({ role: "user", content: current.value } as ChatEntry);
+    props.chat_log.log.push({ role: "assistant", content: ". . ." } as ChatEntry);
+    console.info(props.chat_log.log);
+    props.setChatLog(props.chat_log);
 
-    if (current.value.startsWith("!noai"))
-    {
-      new_chat_log.push({ role: "tester", content: current.value });
-      props.setChatLog({ log: new_chat_log });
+    current.value = "";
 
-      current.value = "";
-    }
-    else
-    {
-      new_chat_log.push({ role: "user", content: current.value });
-      props.setChatLog({ log: new_chat_log });
+    // Update the chat log in the database
+    chatGPT(
+      props.chat_log
+    ).then((response) => {
+      let index = props.chat_log.log?.length === 0 ? 0 : props.chat_log.log.length - 1;
+      props.chat_log.log[index].content = response;
+      props.setChatLog(props.chat_log);
 
-      new_chat_log.push({ role: "assistant", content: ". . ." });
-      props.setChatLog({ log: new_chat_log });
+      // Create a new Chat Message Document
+      appendChat({ role: "assistant", content: response });
+    }).catch((error) => {
+      console.error(error);
+      if (props.chat_log.log === undefined) { return; }
 
-      current.value = "";
-
-      await chatGPT(props.chat_log).then((response) => {
-        new_chat_log[new_chat_log.length - 1].content = response;
-        props.setChatLog({ log: new_chat_log });
-      }).catch((error) => {
-        new_chat_log[new_chat_log.length - 1].content = `Sorry, I'm having some trouble. Please try again later.\n\n> Details\n> ${error}`;
-        props.setChatLog({ log: new_chat_log });
-      });
-    }
+      const index = props.chat_log.log?.length === 0 ? 0 : props.chat_log.log.length - 1;
+      props.chat_log.log[index].content = `Sorry, I'm having some trouble. Please try again later.\n\n> Details\n> ${error}`;
+      props.setChatLog(props.chat_log);
+    });
   };
 
   return (
@@ -55,17 +72,20 @@ const InputBar = (props: InputBarProps) => {
         placeholder='Type your message here...'
         autoFocus
         onKeyPress={ (e) => {
-          if (e.key === 'Enter' && !e.shiftKey)
+          if (e.key === 'Enter' && e.shiftKey)
           {
-            onSend();
+            onSend(inputRef, props);
             e.preventDefault();
           }
         } }
         className='flex-none resize-none grow bg-gray-900 border rounded border-gray-800 text-gray-200 p-2 min-h-full' />
-      <button onClick={ onSend } className='p-4 text-green-400  hover:text-green-100 flex justify-end'>
+      <button
+        onClick={ () => onSend(inputRef, props) }
+        className='p-4 text-green-400  hover:text-green-100 flex justify-end'
+      >
         Send
       </button>
-    </div>
+    </div >
   );
 };
 

@@ -34,7 +34,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Long Text",
    "label": "Description"
   },
   {
@@ -85,7 +85,7 @@
   },
   {
    "group": "Output",
-   "link_doctype": "Project",
+   "link_doctype": "Development",
    "link_fieldname": "objective"
   },
   {
@@ -104,7 +104,7 @@
    "link_fieldname": "objective"
   }
  ],
- "modified": "2023-03-05 00:10:05.972733",
+ "modified": "2023-03-08 01:31:33.412243",
  "modified_by": "Administrator",
  "module": "ELN",
  "name": "Objective",

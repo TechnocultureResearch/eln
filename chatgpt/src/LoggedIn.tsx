@@ -6,15 +6,11 @@ import { useFrappeGetDoc } from "frappe-react-sdk";
 import { ChatLog } from "./types";
 
 interface LoggedInProps {
-  user: string;
   chat_log: ChatLog;
   setChatLog: (chat_log: ChatLog) => void;
 }
 
 const LoggedIn = (props: LoggedInProps) => {
-  const chat_id = window.location.pathname;
-  console.log(chat_id);
-
   const { data, error } = useFrappeGetDoc<ELNSettings>(
     'ELN Settings',
     'ELN Settings',
@@ -34,16 +30,23 @@ const LoggedIn = (props: LoggedInProps) => {
   return (
     <>
       {/* { isValidating && <div className='text-gray-500'>Loading...</div> }; */ }
+
       {
         error &&
         <div className='text-red-500'>
           <p>There was an error loading the settings.</p>
         </div>
       }
-      { data && <div className='flex flex-col grow gap-6'>
-        <Chat chat={ props.chat_log } />
-        <InputBar chat_log={ props.chat_log } setChatLog={ props.setChatLog } />
-      </div>
+
+      {
+        data &&
+        <div className='flex flex-col grow gap-6'>
+          <Chat chat={ props.chat_log } />
+          <InputBar
+            chat_log={ props.chat_log }
+            setChatLog={ props.setChatLog }
+          />
+        </div>
       }
     </>
   );
