@@ -1,14 +1,8 @@
-import { ELNSettings } from "./types/ELN/ELNSettings";
+import { ELNSettings } from "../types/ELN/ELNSettings";
 import InputBar from './InputBar';
 import Chat from './Chat';
 import { useEffect } from "react";
 import { useFrappeGetDoc } from "frappe-react-sdk";
-import { ChatLog } from "./types";
-
-// interface LoggedInProps {
-//   chat_log: ChatLog;
-//   setChatLog: (chat_log: ChatLog) => void;
-// }
 
 const LoggedIn = () => {
   const { data, error } = useFrappeGetDoc<ELNSettings>(

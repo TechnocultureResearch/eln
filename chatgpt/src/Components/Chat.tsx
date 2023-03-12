@@ -1,5 +1,5 @@
 import ChatMessage from "./ChatMessage";
-import { useMessageStore } from "./store";
+import { useMessageStore } from "../utils/store";
 
 const Chat = () => {
   const { messages } = useMessageStore();

@@ -1,8 +1,8 @@
 import TextareaAutosize from 'react-textarea-autosize';
-import { chatGPT, useChat } from './openai';
-import { ChatEntry } from './types';
+import { chatGPT, useChat } from '../LLM/openai';
+import { ChatEntry } from '../types/types';
 import { useRef } from 'react';
-import { useMessageStore } from './store';
+import { useMessageStore } from '../utils/store';
 
 // import { useFrappeUpdateDoc } from 'frappe-react-sdk';
 // import { ChatIdContext } from './chat_id_context';

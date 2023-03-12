@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { ChatEntry, ChatLog } from './types';
+import { ChatEntry } from '../types/types';
 import { useFrappeCreateDoc, useFrappeGetDoc, useFrappeUpdateDoc, FrappeDoc } from 'frappe-react-sdk';
-import { Chat } from './types/ELN/Chat';
-import { ChatMessage } from './types/ELN/ChatMessage';
+import { Chat } from '../types/ELN/Chat';
+import { ChatMessage } from '../types/ELN/ChatMessage';
 import { useContext } from 'react';
-import { ChatIdContext } from './chat_id_context';
+import { ChatIdContext } from '../utils/chat_id_context';
 import { useEffect } from 'react';
 
 // // 1. Authenticate, get token from OpenAI

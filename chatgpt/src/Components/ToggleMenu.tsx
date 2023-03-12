@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
-import { SystemPersona } from './types';
+import { SystemPersona } from '../types/types';
 
 
 interface ToggleMenuProps {

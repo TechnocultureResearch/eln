@@ -1,4 +1,4 @@
-import { ChatEntry } from "./types";
+import { ChatEntry } from "../types/types";
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -9,7 +9,6 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 interface ChatMessageProps {
   chat: ChatEntry;
-  // className?: React.ComponentProps<'div'>['className'];
 }
 
 const ChatMessage = (props: ChatMessageProps) => {

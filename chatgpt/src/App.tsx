@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useFrappeAuth, useFrappeGetDoc } from 'frappe-react-sdk';
-import { SystemPersona, ChatLog, ChatEntry } from './types';
-import { SystemPrompt } from './prompts';
+import { SystemPersona, ChatLog, ChatEntry } from './types/types';
+import { SystemPrompt } from './LLM/prompts';
 import { Chat } from './types/ELN/Chat';
 import Div100vh from 'react-div-100vh';
-import LoggedOut from './LoggedOut';
-import LoggedIn from './LoggedIn';
-import ToggleMenu from './ToggleMenu';
+import LoggedOut from './Components/LoggedOut';
+import LoggedIn from './Components/LoggedIn';
+import ToggleMenu from './Components/ToggleMenu';
 import logo from './assets/logo.png';
 import { ErrorBoundary } from "react-error-boundary";
-import { useChat } from './openai';
+import { useChat } from './LLM/openai';
 
 function ErrorFallback ({ error, componentStack, resetErrorBoundary }: any) {
   return (

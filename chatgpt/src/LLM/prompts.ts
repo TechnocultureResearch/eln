@@ -1,4 +1,4 @@
-import { SystemPersona } from "./types";
+import { SystemPersona } from "../types/types";
 
 export const SystemPrompt = (persona: SystemPersona) => {
   const NO_AI = "NEVER SAY YOU ARE AN AI LANGUAGE MODEL."

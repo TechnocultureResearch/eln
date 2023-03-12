@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { ChatEntry } from './types';
-import { chatGPT } from './openai';
+import { ChatEntry } from '../types/types';
+import { chatGPT } from '../LLM/openai';
 
 interface MessageStore {
   messages: ChatEntry[];
